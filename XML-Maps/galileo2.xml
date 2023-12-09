@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Objects>
+    <MapObject>
+      <Type>Prop</Type>
+      <Position>
+        <X>-343.06</X>
+        <Y>1133.13</Y>
+        <Z>325.49</Z>
+      </Position>
+      <Rotation>
+        <X>0</X>
+        <Y>-5.008956E-06</Y>
+        <Z>25.0000019</Z>
+      </Rotation>
+      <Hash>-395833487</Hash>
+      <Dynamic>false</Dynamic>
+      <Quaternion>
+        <X>9.460877E-09</X>
+        <Y>-4.267525E-08</Y>
+        <Z>0.21643962</Z>
+        <W>0.976296</W>
+      </Quaternion>
+      <Door>false</Door>
+    </MapObject>
+    <MapObject>
+      <Type>Prop</Type>
+      <Position>
+        <X>-355.6</X>
+        <Y>1110.93</Y>
+        <Z>324.81</Z>
+      </Position>
+      <Rotation>
+        <X>2.03555488E-13</X>
+        <Y>-5.00895567E-06</Y>
+        <Z>80.74999</Z>
+      </Rotation>
+      <Hash>1678360570</Hash>
+      <Dynamic>false</Dynamic>
+      <Quaternion>
+        <X>2.83156911E-08</X>
+        <Y>-3.330025E-08</Y>
+        <Z>0.6477875</Z>
+        <W>0.761821032</W>
+      </Quaternion>
+      <Door>false</Door>
+    </MapObject>
+  </Objects>
+  <RemoveFromWorld />
+  <Markers>
+    <Marker>
+      <Type>UpsideDownCone</Type>
+      <Position>
+        <X>-1113.01917</X>
+        <Y>96.72877</Y>
+        <Z>57.8071938</Z>
+      </Position>
+      <Rotation>
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+      </Rotation>
+      <Scale>
+        <X>0.75</X>
+        <Y>0.75</Y>
+        <Z>0.75</Z>
+      </Scale>
+      <TeleportTarget xsi:nil="true" />
+      <Red>255</Red>
+      <Green>255</Green>
+      <Blue>0</Blue>
+      <Alpha>255</Alpha>
+      <BobUpAndDown>false</BobUpAndDown>
+      <RotateToCamera>false</RotateToCamera>
+      <OnlyVisibleInEditor>true</OnlyVisibleInEditor>
+      <Id>3</Id>
+    </Marker>
+  </Markers>
+  <Metadata>
+    <Creator>MixTr0</Creator>
+    <Name>Galileo Mansion</Name>
+    <Description />
+    <LoadingPoint>
+      <X>-1113.01917</X>
+      <Y>96.72877</Y>
+      <Z>57.8071938</Z>
+    </LoadingPoint>
+    <TeleportPoint xsi:nil="true" />
+  </Metadata>
+</Map>
