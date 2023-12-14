@@ -1,0 +1,37 @@
+<Object0>
+	<posx>0</posx>
+	<posy>15</posy>
+	<posz>6</posz>
+	<pitch>-165</pitch>
+	<yaw>0</yaw>
+	<roll>180</roll>
+	<visible>1</visible>
+	<pcolorr>255</pcolorr>
+	<pcolorg>255</pcolorg>
+	<pcolorb>255</pcolorb>
+	<scolorr>255</scolorr>
+	<scolorg>255</scolorg>
+	<scolorb>255</scolorb>
+	<hash>-1030275036</hash>
+</Object0>
+<Base>
+	<count>2</count>
+	<basehash>408192225</basehash>
+</Base>
+<Object1>
+	<posx>0</posx>
+	<posy>-10</posy>
+	<posz>8</posz>
+	<pitch>165</pitch>
+	<yaw>0</yaw>
+	<roll>180</roll>
+	<visible>1</visible>
+	<pcolorr>255</pcolorr>
+	<pcolorg>255</pcolorg>
+	<pcolorb>255</pcolorb>
+	<scolorr>255</scolorr>
+	<scolorg>255</scolorg>
+	<scolorb>255</scolorb>
+	<hash>-1030275036</hash>
+</Object1>
+

@@ -1,0 +1,25 @@
+<Object0>
+	<posx>5</posx>
+	<posy>81</posy>
+	<posz>-11</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>-95</roll>
+	<visible>1</visible>
+	<hash>-2012160162</hash>
+</Object0>
+<Base>
+	<count>2</count>
+	<basehash>-2137348917</basehash>
+</Base>
+<Object1>
+	<posx>-7</posx>
+	<posy>-66</posy>
+	<posz>-13</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>85</roll>
+	<visible>1</visible>
+	<hash>-2012160162</hash>
+</Object1>
+

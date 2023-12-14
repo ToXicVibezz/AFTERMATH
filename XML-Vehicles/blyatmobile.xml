@@ -1,0 +1,117 @@
+<Object0>
+	<posx>5</posx>
+	<posy>13</posy>
+	<posz>-7</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>0</roll>
+	<visible>1</visible>
+	<pcolorr>0</pcolorr>
+	<pcolorg>0</pcolorg>
+	<pcolorb>0</pcolorb>
+	<scolorr>0</scolorr>
+	<scolorg>0</scolorg>
+	<scolorb>0</scolorb>
+	<hash>540101442</hash>
+</Object0>
+<Object1>
+	<posx>-5</posx>
+	<posy>13</posy>
+	<posz>-7</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>0</roll>
+	<visible>1</visible>
+	<pcolorr>0</pcolorr>
+	<pcolorg>0</pcolorg>
+	<pcolorb>0</pcolorb>
+	<scolorr>0</scolorr>
+	<scolorg>0</scolorg>
+	<scolorb>0</scolorb>
+	<hash>540101442</hash>
+</Object1>
+<Object2>
+	<posx>-11</posx>
+	<posy>-36</posy>
+	<posz>-9</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>0</roll>
+	<visible>1</visible>
+	<hash>243282660</hash>
+</Object2>
+<Object3>
+	<posx>-1</posx>
+	<posy>-36</posy>
+	<posz>-9</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>0</roll>
+	<visible>1</visible>
+	<hash>243282660</hash>
+</Object3>
+<Object4>
+	<posx>9</posx>
+	<posy>-36</posy>
+	<posz>-9</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>0</roll>
+	<visible>1</visible>
+	<hash>243282660</hash>
+</Object4>
+<Object5>
+	<posx>12</posx>
+	<posy>-36</posy>
+	<posz>-9</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>0</roll>
+	<visible>1</visible>
+	<hash>243282660</hash>
+</Object5>
+<Object6>
+	<posx>13</posx>
+	<posy>-35</posy>
+	<posz>8</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>0</roll>
+	<visible>1</visible>
+	<hash>-474725660</hash>
+</Object6>
+<Object7>
+	<posx>-13</posx>
+	<posy>-35</posy>
+	<posz>8</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>0</roll>
+	<visible>1</visible>
+	<hash>-474725660</hash>
+</Object7>
+<Object8>
+	<posx>-13</posx>
+	<posy>32</posy>
+	<posz>4</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>0</roll>
+	<visible>1</visible>
+	<hash>-474725660</hash>
+</Object8>
+<Base>
+	<count>10</count>
+	<basehash>-1435527158</basehash>
+</Base>
+<Object9>
+	<posx>13</posx>
+	<posy>32</posy>
+	<posz>4</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>0</roll>
+	<visible>1</visible>
+	<hash>-474725660</hash>
+</Object9>
+

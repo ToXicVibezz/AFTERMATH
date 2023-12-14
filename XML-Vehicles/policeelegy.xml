@@ -1,0 +1,65 @@
+<Object0>
+	<posx>2</posx>
+	<posy>21</posy>
+	<posz>-2</posz>
+	<pitch>180</pitch>
+	<yaw>0</yaw>
+	<roll>180</roll>
+	<visible>1</visible>
+	<hash>-1433191435</hash>
+</Object0>
+<Object1>
+	<posx>-2</posx>
+	<posy>21</posy>
+	<posz>-2</posz>
+	<pitch>180</pitch>
+	<yaw>0</yaw>
+	<roll>180</roll>
+	<visible>1</visible>
+	<hash>-481743520</hash>
+</Object1>
+<Object2>
+	<posx>-4</posx>
+	<posy>-3</posy>
+	<posz>8</posz>
+	<pitch>180</pitch>
+	<yaw>0</yaw>
+	<roll>180</roll>
+	<visible>1</visible>
+	<hash>-1433191435</hash>
+</Object2>
+<Object3>
+	<posx>4</posx>
+	<posy>-3</posy>
+	<posz>8</posz>
+	<pitch>180</pitch>
+	<yaw>0</yaw>
+	<roll>180</roll>
+	<visible>1</visible>
+	<hash>-1433191435</hash>
+</Object3>
+<Object4>
+	<posx>3</posx>
+	<posy>-2</posy>
+	<posz>8</posz>
+	<pitch>180</pitch>
+	<yaw>0</yaw>
+	<roll>180</roll>
+	<visible>1</visible>
+	<hash>-481743520</hash>
+</Object4>
+<Base>
+	<count>6</count>
+	<basehash>196747873</basehash>
+</Base>
+<Object5>
+	<posx>-3</posx>
+	<posy>-2</posy>
+	<posz>8</posz>
+	<pitch>180</pitch>
+	<yaw>0</yaw>
+	<roll>180</roll>
+	<visible>1</visible>
+	<hash>-481743520</hash>
+</Object5>
+

@@ -1,0 +1,154 @@
+<Object0>
+	<posx>235</posx>
+	<posy>0</posy>
+	<posz>0</posz>
+	<pitch>115</pitch>
+	<yaw>0</yaw>
+	<roll>-90</roll>
+	<visible>1</visible>
+	<hash>497122772</hash>
+</Object0>
+<Base>
+	<count>13</count>
+	<basehash>1233534620</basehash>
+</Base>
+<Object1>
+	<posx>-235</posx>
+	<posy>0</posy>
+	<posz>0</posz>
+	<pitch>115</pitch>
+	<yaw>0</yaw>
+	<roll>90</roll>
+	<visible>1</visible>
+	<hash>497122772</hash>
+</Object1>
+<Object2>
+	<posx>0</posx>
+	<posy>110</posy>
+	<posz>290</posz>
+	<pitch>100</pitch>
+	<yaw>0</yaw>
+	<roll>0</roll>
+	<visible>1</visible>
+	<hash>497122772</hash>
+</Object2>
+<Object3>
+	<posx>-260</posx>
+	<posy>-25</posy>
+	<posz>350</posz>
+	<pitch>125</pitch>
+	<yaw>0</yaw>
+	<roll>90</roll>
+	<visible>1</visible>
+	<hash>497122772</hash>
+</Object3>
+<Object4>
+	<posx>260</posx>
+	<posy>-25</posy>
+	<posz>350</posz>
+	<pitch>125</pitch>
+	<yaw>0</yaw>
+	<roll>-90</roll>
+	<visible>1</visible>
+	<hash>497122772</hash>
+</Object4>
+<Object5>
+	<posx>0</posx>
+	<posy>-25</posy>
+	<posz>630</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>0</roll>
+	<visible>1</visible>
+	<hash>-35121593</hash>
+</Object5>
+<Object6>
+	<posx>-40</posx>
+	<posy>-25</posy>
+	<posz>780</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>0</roll>
+	<visible>1</visible>
+	<hash>1530167798</hash>
+</Object6>
+<Object7>
+	<posx>40</posx>
+	<posy>-25</posy>
+	<posz>780</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>0</roll>
+	<visible>1</visible>
+	<hash>1530167798</hash>
+</Object7>
+<Object8>
+	<posx>0</posx>
+	<posy>-25</posy>
+	<posz>700</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>0</roll>
+	<visible>1</visible>
+	<hash>1530167798</hash>
+</Object8>
+<Object9>
+	<posx>-10</posx>
+	<posy>-25</posy>
+	<posz>700</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>0</roll>
+	<visible>1</visible>
+	<hash>1530167798</hash>
+</Object9>
+<Object10>
+	<posx>10</posx>
+	<posy>-25</posy>
+	<posz>700</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>0</roll>
+	<visible>1</visible>
+	<hash>1530167798</hash>
+</Object10>
+<Object11>
+	<posx>-20</posx>
+	<posy>-25</posy>
+	<posz>700</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>0</roll>
+	<visible>1</visible>
+	<hash>1530167798</hash>
+</Object11>
+<Object12>
+	<posx>20</posx>
+	<posy>-25</posy>
+	<posz>700</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>0</roll>
+	<visible>1</visible>
+	<hash>1530167798</hash>
+</Object12>
+<Object13>
+	<posx>-30</posx>
+	<posy>-25</posy>
+	<posz>700</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>0</roll>
+	<visible>1</visible>
+	<hash>1530167798</hash>
+</Object13>
+<Object14>
+	<posx>30</posx>
+	<posy>-25</posy>
+	<posz>700</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>0</roll>
+	<visible>1</visible>
+	<hash>1530167798</hash>
+</Object14>

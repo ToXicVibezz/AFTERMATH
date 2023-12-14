@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <Vehicle menyoo_ver="1.3.0">
-	<ModelHash>0x809aa4cb</ModelHash>
-	<InitialHandle>480625</InitialHandle>
+	<ModelHash>0x82cac433</ModelHash>
+	<InitialHandle>193914</InitialHandle>
 	<VehicleProperties>
 		<Colours>
-			<Primary>78</Primary>
+			<Primary>122</Primary>
 			<Secondary>0</Secondary>
-			<Pearl>80</Pearl>
+			<Pearl>122</Pearl>
 			<Rim>156</Rim>
 			<Mod1_a>0</Mod1_a>
 			<Mod1_b>1080631296</Mod1_b>
@@ -23,14 +23,14 @@
 			<LrXenonHeadlights>255</LrXenonHeadlights>
 		</Colours>
 		<Livery>-1</Livery>
-		<NumberPlateText>03FHE381</NumberPlateText>
+		<NumberPlateText>27EQB058</NumberPlateText>
 		<NumberPlateIndex>0</NumberPlateIndex>
 		<WheelType>0</WheelType>
 		<WheelsInvisible>false</WheelsInvisible>
 		<EngineSoundName></EngineSoundName>
 		<WindowTint>-1</WindowTint>
-		<BulletProofTyres>false</BulletProofTyres>
-		<DirtLevel>0.00741741201</DirtLevel>
+		<BulletProofTyres>true</BulletProofTyres>
+		<DirtLevel>0</DirtLevel>
 		<PaintFade>0.298039228</PaintFade>
 		<RoofState>0</RoofState>
 		<SirenActive>false</SirenActive>
@@ -138,20 +138,20 @@
 	<Health>1000</Health>
 	<HasGravity>true</HasGravity>
 	<IsOnFire>false</IsOnFire>
-	<IsInvincible>false</IsInvincible>
-	<IsBulletProof>false</IsBulletProof>
-	<IsExplosionProof>false</IsExplosionProof>
+	<IsInvincible>true</IsInvincible>
+	<IsBulletProof>true</IsBulletProof>
+	<IsExplosionProof>true</IsExplosionProof>
 	<IsFireProof>false</IsFireProof>
-	<IsMeleeProof>false</IsMeleeProof>
+	<IsMeleeProof>true</IsMeleeProof>
 	<IsOnlyDamagedByPlayer>false</IsOnlyDamagedByPlayer>
-	<SpoonerAttachments SetAttachmentsPersistentAndAddToSpoonerDatabase="true" StartTaskSequencesOnLoad="true">
+	<SpoonerAttachments SetAttachmentsPersistentAndAddToSpoonerDatabase="false" StartTaskSequencesOnLoad="true">
 		<Attachment>
 			<ModelHash>0x9a4efae5</ModelHash>
 			<Type>3</Type>
 			<Dynamic>false</Dynamic>
 			<FrozenPos>true</FrozenPos>
 			<HashName>xs_combined2_dyst_07_cabin</HashName>
-			<InitialHandle>175474</InitialHandle>
+			<InitialHandle>203642</InitialHandle>
 			<ObjectProperties>
 				<TextureVariation>0</TextureVariation>
 			</ObjectProperties>
@@ -159,7 +159,7 @@
 			<LodDistance>16960</LodDistance>
 			<IsVisible>true</IsVisible>
 			<MaxHealth>1000</MaxHealth>
-			<Health>1000</Health>
+			<Health>721</Health>
 			<HasGravity>true</HasGravity>
 			<IsOnFire>false</IsOnFire>
 			<IsInvincible>false</IsInvincible>
@@ -170,22 +170,22 @@
 			<IsMeleeProof>false</IsMeleeProof>
 			<IsOnlyDamagedByPlayer>false</IsOnlyDamagedByPlayer>
 			<PositionRotation>
-				<X>-1321.81152</X>
-				<Y>-3046.03809</Y>
-				<Z>-27.4217339</Z>
-				<Pitch>-40.1037025</Pitch>
-				<Roll>-8.78608322</Roll>
-				<Yaw>55.7624931</Yaw>
+				<X>-369.621338</X>
+				<Y>-3234.30493</Y>
+				<Z>-37.1869125</Z>
+				<Pitch>-32.6941185</Pitch>
+				<Roll>-9.63057327</Roll>
+				<Yaw>40.8684158</Yaw>
 			</PositionRotation>
 			<Attachment isAttached="true">
-				<AttachedTo>480625</AttachedTo>
+				<AttachedTo>193914</AttachedTo>
 				<BoneIndex>0</BoneIndex>
-				<X>25.2999935</X>
-				<Y>14.8000135</Y>
-				<Z>-41.599987</Z>
-				<Pitch>-39.8000145</Pitch>
-				<Roll>-8.60000134</Roll>
-				<Yaw>65.9000168</Yaw>
+				<X>25.2500019</X>
+				<Y>14.8299942</Y>
+				<Z>-37.4999886</Z>
+				<Pitch>-39.7999687</Pitch>
+				<Roll>-8.59999275</Roll>
+				<Yaw>65.8999939</Yaw>
 			</Attachment>
 		</Attachment>
 		<Attachment>
@@ -194,7 +194,7 @@
 			<Dynamic>false</Dynamic>
 			<FrozenPos>true</FrozenPos>
 			<HashName>xs_combined2_dyst_07_hull</HashName>
-			<InitialHandle>188786</InitialHandle>
+			<InitialHandle>773240</InitialHandle>
 			<ObjectProperties>
 				<TextureVariation>0</TextureVariation>
 			</ObjectProperties>
@@ -202,7 +202,7 @@
 			<LodDistance>16960</LodDistance>
 			<IsVisible>true</IsVisible>
 			<MaxHealth>1000</MaxHealth>
-			<Health>1000</Health>
+			<Health>582</Health>
 			<HasGravity>true</HasGravity>
 			<IsOnFire>false</IsOnFire>
 			<IsInvincible>false</IsInvincible>
@@ -213,19 +213,19 @@
 			<IsMeleeProof>false</IsMeleeProof>
 			<IsOnlyDamagedByPlayer>false</IsOnlyDamagedByPlayer>
 			<PositionRotation>
-				<X>-1328.24707</X>
-				<Y>-3054.93384</Y>
-				<Z>-29.16082</Z>
-				<Pitch>-14.9627924</Pitch>
-				<Roll>-28.3595428</Roll>
-				<Yaw>32.5553703</Yaw>
+				<X>-378.175812</X>
+				<Y>-3241.17188</Y>
+				<Z>-39.1133347</Z>
+				<Pitch>-7.8650775</Pitch>
+				<Roll>-26.0803699</Roll>
+				<Yaw>18.6154442</Yaw>
 			</PositionRotation>
 			<Attachment isAttached="true">
-				<AttachedTo>480625</AttachedTo>
+				<AttachedTo>193914</AttachedTo>
 				<BoneIndex>-1</BoneIndex>
 				<X>20.5</X>
 				<Y>4.92001772</Y>
-				<Z>-43.3099899</Z>
+				<Z>-39.3099899</Z>
 				<Pitch>-14.7399912</Pitch>
 				<Roll>-28.0999947</Roll>
 				<Yaw>42.639904</Yaw>
@@ -237,7 +237,7 @@
 			<Dynamic>false</Dynamic>
 			<FrozenPos>true</FrozenPos>
 			<HashName>xs_combined2_dyst_07_rear_hull</HashName>
-			<InitialHandle>339056</InitialHandle>
+			<InitialHandle>601722</InitialHandle>
 			<ObjectProperties>
 				<TextureVariation>0</TextureVariation>
 			</ObjectProperties>
@@ -245,7 +245,7 @@
 			<LodDistance>16960</LodDistance>
 			<IsVisible>true</IsVisible>
 			<MaxHealth>1000</MaxHealth>
-			<Health>931</Health>
+			<Health>513</Health>
 			<HasGravity>true</HasGravity>
 			<IsOnFire>false</IsOnFire>
 			<IsInvincible>false</IsInvincible>
@@ -256,19 +256,19 @@
 			<IsMeleeProof>false</IsMeleeProof>
 			<IsOnlyDamagedByPlayer>false</IsOnlyDamagedByPlayer>
 			<PositionRotation>
-				<X>-1321.09094</X>
-				<Y>-3045.96216</Y>
-				<Z>-26.8176346</Z>
-				<Pitch>-40.3014412</Pitch>
-				<Roll>-9.39285183</Roll>
-				<Yaw>54.8576279</Yaw>
+				<X>-368.835327</X>
+				<Y>-3234.50806</Y>
+				<Z>-36.7598801</Z>
+				<Pitch>-32.8825302</Pitch>
+				<Roll>-10.1001396</Roll>
+				<Yaw>40.0432243</Yaw>
 			</PositionRotation>
 			<Attachment isAttached="true">
-				<AttachedTo>480625</AttachedTo>
+				<AttachedTo>193914</AttachedTo>
 				<BoneIndex>0</BoneIndex>
 				<X>25.9999981</X>
 				<Y>14.9999981</Y>
-				<Z>-40.9999962</Z>
+				<Z>-36.9999962</Z>
 				<Pitch>-40.0000267</Pitch>
 				<Roll>-9.19999886</Roll>
 				<Yaw>64.9999924</Yaw>
@@ -280,7 +280,7 @@
 			<Dynamic>false</Dynamic>
 			<FrozenPos>true</FrozenPos>
 			<HashName>xs_combined2_dyst_07_shipdetails</HashName>
-			<InitialHandle>683370</InitialHandle>
+			<InitialHandle>22906</InitialHandle>
 			<ObjectProperties>
 				<TextureVariation>0</TextureVariation>
 			</ObjectProperties>
@@ -288,7 +288,7 @@
 			<LodDistance>16960</LodDistance>
 			<IsVisible>true</IsVisible>
 			<MaxHealth>1000</MaxHealth>
-			<Health>1000</Health>
+			<Health>582</Health>
 			<HasGravity>true</HasGravity>
 			<IsOnFire>false</IsOnFire>
 			<IsInvincible>false</IsInvincible>
@@ -299,19 +299,19 @@
 			<IsMeleeProof>false</IsMeleeProof>
 			<IsOnlyDamagedByPlayer>false</IsOnlyDamagedByPlayer>
 			<PositionRotation>
-				<X>-1328.1521</X>
-				<Y>-3054.97095</Y>
-				<Z>-29.1501961</Z>
-				<Pitch>-15.0226173</Pitch>
-				<Roll>-28.4597855</Roll>
-				<Yaw>32.5151482</Yaw>
+				<X>-378.102997</X>
+				<Y>-3241.29028</Y>
+				<Z>-38.9795113</Z>
+				<Pitch>-7.92640162</Pitch>
+				<Roll>-26.1752625</Roll>
+				<Yaw>18.5786572</Yaw>
 			</PositionRotation>
 			<Attachment isAttached="true">
-				<AttachedTo>480625</AttachedTo>
+				<AttachedTo>193914</AttachedTo>
 				<BoneIndex>25</BoneIndex>
 				<X>20.5999889</X>
-				<Y>4.89999866</Y>
-				<Z>-43.2999458</Z>
+				<Y>-0.700001001</Y>
+				<Z>-44.2999458</Z>
 				<Pitch>-14.7999954</Pitch>
 				<Roll>-28.2000027</Roll>
 				<Yaw>42.6000175</Yaw>
@@ -323,7 +323,7 @@
 			<Dynamic>false</Dynamic>
 			<FrozenPos>true</FrozenPos>
 			<HashName>xs_combined2_dyst_07_shipdetails2</HashName>
-			<InitialHandle>776047</InitialHandle>
+			<InitialHandle>569450</InitialHandle>
 			<ObjectProperties>
 				<TextureVariation>0</TextureVariation>
 			</ObjectProperties>
@@ -331,7 +331,7 @@
 			<LodDistance>16960</LodDistance>
 			<IsVisible>true</IsVisible>
 			<MaxHealth>1000</MaxHealth>
-			<Health>1000</Health>
+			<Health>582</Health>
 			<HasGravity>true</HasGravity>
 			<IsOnFire>false</IsOnFire>
 			<IsInvincible>false</IsInvincible>
@@ -342,19 +342,19 @@
 			<IsMeleeProof>false</IsMeleeProof>
 			<IsOnlyDamagedByPlayer>false</IsOnlyDamagedByPlayer>
 			<PositionRotation>
-				<X>-1321.04333</X>
-				<Y>-3046.27539</Y>
-				<Z>-27.0370712</Z>
-				<Pitch>-40.5019112</Pitch>
-				<Roll>-9.19205093</Roll>
-				<Yaw>55.0576515</Yaw>
+				<X>-368.884888</X>
+				<Y>-3234.79834</Y>
+				<Z>-37.0081177</Z>
+				<Pitch>-33.0849152</Pitch>
+				<Roll>-9.93177891</Roll>
+				<Yaw>40.2217789</Yaw>
 			</PositionRotation>
 			<Attachment isAttached="true">
-				<AttachedTo>480625</AttachedTo>
+				<AttachedTo>193914</AttachedTo>
 				<BoneIndex>0</BoneIndex>
 				<X>26.1000023</X>
 				<Y>14.6999931</Y>
-				<Z>-41.2199898</Z>
+				<Z>-37.2199898</Z>
 				<Pitch>-40.1999931</Pitch>
 				<Roll>-8.99999905</Roll>
 				<Yaw>65.2000275</Yaw>

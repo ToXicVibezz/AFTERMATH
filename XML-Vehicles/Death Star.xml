@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <Vehicle menyoo_ver="0.999876782b">
 	<ModelHash>0x60a7ea10</ModelHash>
 	<InitialHandle>11584</InitialHandle>
@@ -26,7 +26,7 @@
 		<NumberPlateIndex>4</NumberPlateIndex>
 		<WheelType>0</WheelType>
 		<WheelsInvisible>false</WheelsInvisible>
-		<EngineSoundName />
+		<EngineSoundName></EngineSoundName>
 		<WindowTint>-1</WindowTint>
 		<BulletProofTyres>true</BulletProofTyres>
 		<DirtLevel>0.708208501</DirtLevel>
@@ -146,7 +146,7 @@
 	<IsFireProof>false</IsFireProof>
 	<IsMeleeProof>true</IsMeleeProof>
 	<IsOnlyDamagedByPlayer>false</IsOnlyDamagedByPlayer>
-	<SpoonerAttachments SetAttachmentsPersistentAndAddToSpoonerDatabase="true" StartTaskSequencesOnLoad="true">
+	<SpoonerAttachments SetAttachmentsPersistentAndAddToSpoonerDatabase="false" StartTaskSequencesOnLoad="true">
 		<Attachment>
 			<ModelHash>0xed6065bc</ModelHash>
 			<Type>3</Type>

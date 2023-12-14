@@ -1,0 +1,69 @@
+<Object0>
+	<posx>0</posx>
+	<posy>-31</posy>
+	<posz>0</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>-180</roll>
+	<visible>1</visible>
+	<pcolorr>0</pcolorr>
+	<pcolorg>0</pcolorg>
+	<pcolorb>0</pcolorb>
+	<scolorr>0</scolorr>
+	<scolorg>0</scolorg>
+	<scolorb>0</scolorb>
+	<hash>-685276541</hash>
+</Object0>
+<Object1>
+	<posx>0</posx>
+	<posy>-31</posy>
+	<posz>0</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>0</roll>
+	<visible>1</visible>
+	<pcolorr>0</pcolorr>
+	<pcolorg>0</pcolorg>
+	<pcolorb>0</pcolorb>
+	<scolorr>0</scolorr>
+	<scolorg>0</scolorg>
+	<scolorb>0</scolorb>
+	<hash>-685276541</hash>
+</Object1>
+<Object2>
+	<posx>0</posx>
+	<posy>-62</posy>
+	<posz>0</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>-180</roll>
+	<visible>1</visible>
+	<pcolorr>0</pcolorr>
+	<pcolorg>0</pcolorg>
+	<pcolorb>0</pcolorb>
+	<scolorr>0</scolorr>
+	<scolorg>0</scolorg>
+	<scolorb>0</scolorb>
+	<hash>-685276541</hash>
+</Object2>
+<Base>
+	<count>4</count>
+	<basehash>-685276541</basehash>
+</Base>
+<Object3>
+	<posx>0</posx>
+	<posy>-61</posy>
+	<posz>0</posz>
+	<pitch>0</pitch>
+	<yaw>0</yaw>
+	<roll>0</roll>
+	<visible>1</visible>
+	<pcolorr>0</pcolorr>
+	<pcolorg>0</pcolorg>
+	<pcolorb>0</pcolorb>
+	<scolorr>0</scolorr>
+	<scolorg>0</scolorg>
+	<scolorb>0</scolorb>
+	<hash>-685276541</hash>
+</Object3>
+
