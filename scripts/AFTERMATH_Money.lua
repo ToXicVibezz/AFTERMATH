@@ -1,5 +1,4 @@
---This is Scripts Coded To Work In AFTERMATH Menu. I Take No More Credit Than Of Offering This For Free With Free GTA Menu ;P
-
+--This is Scripts Coded To Work In AFTERMATH Menu. I Take No More Credit , Other Than Of Offering This For Free With Free GTA Menu ;P
 
 gui.show_message("AFTERMATH", "Money Methods From Popular Scripts + Menus.")
 
@@ -149,8 +148,7 @@ function TransactionManager:Init()
         end
     end)
     
-    
-    script.register_looped("walletbank", function(script)
+    script.register_looped("wallettobank", function(script)
         if(checkboxwb:is_enabled()) then
             NETSHOPPING.NET_GAMESERVER_TRANSFER_WALLET_TO_BANK(self:GetCharacter(), MONEY.NETWORK_GET_VC_WALLET_BALANCE(self:GetCharacter()))
         end
