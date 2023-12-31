@@ -1,0 +1,124 @@
+{
+    "MOD_AERIALS": [
+        1,
+        0
+    ],
+    "MOD_AIRFILTER": [
+        4,
+        0
+    ],
+    "MOD_ARMOR": [
+        4,
+        0
+    ],
+    "MOD_BRAKES": [
+        2,
+        0
+    ],
+    "MOD_COLUMNSHIFTERLEVERS": [
+        4,
+        0
+    ],
+    "MOD_DIALDESIGN": [
+        6,
+        0
+    ],
+    "MOD_ENGINE": [
+        3,
+        0
+    ],
+    "MOD_ENGINEBLOCK": [
+        5,
+        0
+    ],
+    "MOD_EXHAUST": [
+        1,
+        0
+    ],
+    "MOD_FRONTBUMPER": [
+        1,
+        0
+    ],
+    "MOD_FRONTWHEEL": [
+        186,
+        0
+    ],
+    "MOD_HYDRAULICS": [
+        2,
+        0
+    ],
+    "MOD_LIVERY": [
+        0,
+        0
+    ],
+    "MOD_ORNAMENTS": [
+        11,
+        0
+    ],
+    "MOD_PLAQUES": [
+        18,
+        0
+    ],
+    "MOD_STEERINGWHEELS": [
+        9,
+        0
+    ],
+    "MOD_TANK": [
+        2,
+        0
+    ],
+    "MOD_TIRESMOKE": "TOGGLE",
+    "MOD_TRANSMISSION": [
+        2,
+        0
+    ],
+    "MOD_TRIM": [
+        2,
+        0
+    ],
+    "MOD_TRIMDESIGN": [
+        0,
+        0
+    ],
+    "MOD_TRUNK": [
+        3,
+        0
+    ],
+    "MOD_TURBO": "TOGGLE",
+    "clan_logo": 0,
+    "dash_color": 36,
+    "has_collision": true,
+    "headlight_color": 255,
+    "interior_color": 0,
+    "is_invincible": true,
+    "is_visible": true,
+    "model_attachments": [],
+    "neon_color": [
+        255,
+        0,
+        255
+    ],
+    "neon_lights": [
+        false,
+        false,
+        false,
+        false
+    ],
+    "pearlescent_color": 4,
+    "plate_text": "27GBV392",
+    "plate_text_index": 0,
+    "primary_color": 4,
+    "radio_station": "OFF",
+    "secondary_color": 36,
+    "tire_smoke_color": [
+        255,
+        255,
+        255
+    ],
+    "vehicle_attachments": [],
+    "vehicle_extras": [],
+    "vehicle_model_hash": 2254540506,
+    "vehicle_window_tint": 0,
+    "wheel_color": 156,
+    "wheel_type": 8
+}
