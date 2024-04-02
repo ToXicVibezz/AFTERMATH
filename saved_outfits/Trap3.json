@@ -1,0 +1,90 @@
+{
+    "components": {
+        "0": {
+            "drawable_id": 21,
+            "texture_id": 0
+        },
+        "1": {
+            "drawable_id": 101,
+            "texture_id": 11
+        },
+        "10": {
+            "drawable_id": 0,
+            "texture_id": 0
+        },
+        "11": {
+            "drawable_id": 68,
+            "texture_id": 10
+        },
+        "2": {
+            "drawable_id": 41,
+            "texture_id": 0
+        },
+        "3": {
+            "drawable_id": 223,
+            "texture_id": 0
+        },
+        "4": {
+            "drawable_id": 123,
+            "texture_id": 10
+        },
+        "5": {
+            "drawable_id": 0,
+            "texture_id": 0
+        },
+        "6": {
+            "drawable_id": 81,
+            "texture_id": 12
+        },
+        "7": {
+            "drawable_id": 95,
+            "texture_id": 0
+        },
+        "8": {
+            "drawable_id": 209,
+            "texture_id": 19
+        },
+        "9": {
+            "drawable_id": 0,
+            "texture_id": 0
+        }
+    },
+    "props": {
+        "0": {
+            "drawable_id": 117,
+            "texture_id": 11
+        },
+        "1": {
+            "drawable_id": 9,
+            "texture_id": 3
+        },
+        "2": {
+            "drawable_id": 2,
+            "texture_id": 0
+        },
+        "3": {
+            "drawable_id": -1,
+            "texture_id": -1
+        },
+        "4": {
+            "drawable_id": -1,
+            "texture_id": -1
+        },
+        "5": {
+            "drawable_id": -1,
+            "texture_id": -1
+        },
+        "6": {
+            "drawable_id": 22,
+            "texture_id": 0
+        },
+        "7": {
+            "drawable_id": -1,
+            "texture_id": -1
+        },
+        "8": {
+            "drawable_id": -1,
+            "texture_id": -1
+        }
+    }
+}
