@@ -1,10 +1,13 @@
 --This is Scripts Coded To Work In AFTERMATH Menu. I Take No More Credit , Other Than Of Offering This For Free With Free GTA Menu ;P
-
-gui.show_message("AFTERMATH", "Money Methods From Popular Scripts + Menus.")
+--Updated To Latest Game Build 1.69 3258
+online_version = memory.scan_pattern("8B C3 33 D2 C6 44 24 20"):add(0x24):rip()
+if tonumber(online_version:get_string()) == 3258 then 
+    gui.show_message("AFTERMATH", "Money Methods From Popular Scripts + Menus.")
 
 CEO2=277873
 CEO3=277874
 CEO1=278108
+CHIP=1963515
 
 local TransactionManager <const> = {};
 TransactionManager.__index = TransactionManager
@@ -25,60 +28,69 @@ function TransactionManager.new()
         {label = "1M (Avenger Operations Money Limited)", hash = 0xE9BBC247},
         {label = "1M (Daily Objective Event Money Limited)", hash = 0x314FB8B0},
         {label = "1M (Daily Objective Money Limited)", hash = 0xBFCBE6B6},
+        {label = "1M (Stealth 1 Million)", hash = 0x615762F1},
         {label = "680K (Betting Money Limited)", hash = 0xACA75AAE},
-        {label = "500K (Juggalo Story Money Limited)", hash = 0x05F2B7EE},
+        {label = "500K (Juggalo Story Money Limited) [RISK]", hash = 0x05F2B7EE},
         {label = "310K (Vehicle Export Money Limited)", hash = 0xEE884170},
         {label = "200K (DoomsDay Finale Bonus Money Limited)", hash = 0xBA16F44B},
         {label = "200K (Action Figures Money Limited)",  hash = 0x9145F938},
         {label = "200K (Collectibles Money Limited)",    hash = 0xCDCF2380},
-        {label = "190K (Vehicle Sales Money Limited)",   hash = 0xFD389995}
+        {label = "190K (Vehicle Sales Money Limited)",   hash = 0xFD389995},
+        {label = "50K (Stealth 50K)", hash = 0x610F9AB4}
     }
 
     return instance;
 end
 
----@return Table TransactionList
 function TransactionManager:GetTransactionList()
     return self.Transactions;
 end
 
----@return Int32 character
 function TransactionManager:GetCharacter()
     local _, char = STATS.STAT_GET_INT(joaat("MPPLY_LAST_MP_CHAR"), 0, 1)
     return tonumber(char);
 end
 
----@param Int32 hash 
----@param Int32 category
----@return Int32 price
 function TransactionManager:GetPrice(hash, category)
     return tonumber(NETSHOPPING.NET_GAMESERVER_GET_PRICE(hash, category, true))
 end
 
----@param Int32 hash 
----@param? Int32 amount 
 function TransactionManager:TriggerTransaction(hash, amount)
-    globals.set_int(4537212 + 1, 2147483646)
-    globals.set_int(4537212 + 7, 2147483647)
-    globals.set_int(4537212 + 6, 0)
-    globals.set_int(4537212 + 5, 0)
-    globals.set_int(4537212 + 3, hash)
-    globals.set_int(4537212 + 2, amount or self:GetPrice(hash, 0x57DE404E))
-    globals.set_int(4537212, 1)
+    globals.set_int(4537311 + 1, 2147483646)
+    globals.set_int(4537311 + 7, 2147483647)
+    globals.set_int(4537311 + 6, 0)
+    globals.set_int(4537311 + 5, 0)
+    globals.set_int(4537311 + 3, hash)
+    globals.set_int(4537311 + 2, amount or self:GetPrice(hash, 0x57DE404E))
+    globals.set_int(4537311, 1)
+end
+
+function run_script(name) --start script thread
+    script.run_in_fiber(function (runscript)
+        SCRIPT.REQUEST_SCRIPT(name)  
+        repeat runscript:yield() until SCRIPT.HAS_SCRIPT_LOADED(name)
+        SYSTEM.START_NEW_SCRIPT(name, 5000)
+        SCRIPT.SET_SCRIPT_AS_NO_LONGER_NEEDED(name)
+    end)
 end
 
 function TransactionManager:Init()
     local tab               = gui.get_tab("GUI_TAB_LUA_SCRIPTS")
+    local chips             = tab:add_tab("GUI_TAB_LUA_SCRIPTS")
+    local heist             = tab:add_tab("GUI_TAB_LUA_SCRIPTS")
     local crate             = tab:add_tab("GUI_TAB_LUA_SCRIPTS")
     local sub_atm           = tab:add_tab("GUI_TAB_LUA_SCRIPTS")
     local sub_transaction   = tab:add_tab("GUI_TAB_LUA_SCRIPTS")
-    local checkboxwb        = sub_atm:add_checkbox("Transfer Wallet Money To Bank")
+    local checkboxwb        = sub_atm:add_checkbox("Transfer Wallet Money To Bank") 
+    local checkbox50k       = sub_transaction:add_checkbox("50K Loop")
+    local sameline          = sub_transaction:add_sameline()
+    local checkbox180k      = sub_transaction:add_checkbox("180k Loop")
     local checkbox1m        = sub_transaction:add_checkbox("1M Loop")
     local sameline          = sub_transaction:add_sameline()
-    local checkbox50k       = sub_transaction:add_checkbox("50K Loop")
+    local checkbox40m       = sub_transaction:add_checkbox("40M Loop")
+    local checkboxc5k       = chips:add_checkbox("Enable Chip 5k Loop")
     local checkboxcc        = crate:add_checkbox("Enable Ceo Crate Loop")
     local sub_transactionL  = tab:add_tab("GUI_TAB_LUA_SCRIPTS")
-
     local cs = "appsecuroserv"
     local ci = "gb_contraband_sell"
     local cb = "gb_contraband_buy"
@@ -91,7 +103,19 @@ function TransactionManager:Init()
             globals.set_int(CEO1, cratevalue)
         end
     end)
-    
+
+    chips:add_button("Chips set to 1000000000", function()
+    script.run_in_fiber(function (script)
+        STATS.STAT_SET_INT(joaat("MPPLY_CASINO_CHIPS_PUR_GD"), -1000000000, true)
+    end)
+    end)
+
+    chips:add_button("Chips reset to 0", function()
+    script.run_in_fiber(function (script)
+        STATS.STAT_SET_INT(joaat("MPPLY_CASINO_CHIPS_PUR_GD"), 0, true)
+    end)
+    end)
+
     crate:add_button("Open Warehouse", function() SCRIPT.REQUEST_SCRIPT("apparcadebusinesshub") SYSTEM.START_NEW_SCRIPT("apparcadebusinesshub", 8344) end)
     script.register_looped("ceocrateloop", function (script)
         cratevalue = globals.get_int(CEO1)
@@ -142,9 +166,40 @@ function TransactionManager:Init()
         end
     end)
     
+    script.register_looped("180ktransaction", function(script)
+        if checkbox180k:is_enabled() == true then
+            checkbox180k = not checkbox180k
+            if checkbox180k then
+                self:TriggerTransaction(0x615762F1)
+            end
+        end
+    end)
+
     script.register_looped("50ktransaction", function(script)
         if(checkbox50k:is_enabled()) then
             self:TriggerTransaction(0x610F9AB4)
+        end
+    end)
+
+    script.register_looped("40mtransaction", function(script)
+        if(checkbox40m:is_enabled()) then
+            self:TriggerTransaction(0x176D9D54)
+	yield(3000)
+	self:TriggerTransaction(0xED97AFC1, 7000000)
+	yield(3000)
+	self:TriggerTransaction(0xA174F633, 15000000)
+	yield(3000)
+	self:TriggerTransaction(0x314FB8B0, 1000000)
+	yield(3000)
+	self:TriggerTransaction(0x4B6A869C, 2000000)
+	yield(40000)
+        end
+    end)
+
+    script.register_looped("5kchiptransaction", function(script)
+        if(checkboxc5k:is_enabled()) then
+            globals.set_int(CHIP, 1)
+	yield(3000)
         end
     end)
     
@@ -161,9 +216,14 @@ function TransactionManager:Init()
     end    
 end
 
---all credits to me and phobos (Very Based) thanks for making the code more optimized and make it looks better :) -- pessi_v0.2 SCRIPT
---YimCeo v0.5 From UnknownCheats // Slon Script 
-
---Updated To Latest GTA V 1.68 3950
-
 TransactionManager.new():Init()
+
+else
+  gui.show_message("AFTERMATH", "Aftermath Money is not up-to-date.\nPlease update the script!")
+  updateD = gui.get_tab("GUI_TAB_LUA_SCRIPTS")
+  updateD:add_text("Aftermath Money is not up-to-date.\nPlease update the script.")
+end
+
+-- all credits to me and phobos (Very Based) thanks for making the code more optimized and make it looks better :) 
+-- pessi_v0.2 SCRIPT
+-- YimCeo v0.5 From UnknownCheats // Slon Script 
