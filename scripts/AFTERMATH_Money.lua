@@ -1,7 +1,7 @@
 --This is Scripts Coded To Work In AFTERMATH Menu. I Take No More Credit , Other Than Of Offering This For Free With Free GTA Menu ;P
---Updated To Latest Game Build 1.69 3258
+--Updated To Latest Game Build 1.69 3274
 online_version = memory.scan_pattern("8B C3 33 D2 C6 44 24 20"):add(0x24):rip()
-if tonumber(online_version:get_string()) == 3258 then 
+if tonumber(online_version:get_string()) == 3274 then 
     gui.show_message("AFTERMATH", "Money Methods From Popular Scripts + Menus.")
 
 CEO2=277873
@@ -52,26 +52,20 @@ function TransactionManager:GetCharacter()
 end
 
 function TransactionManager:GetPrice(hash, category)
-    return tonumber(NETSHOPPING.NET_GAMESERVER_GET_PRICE(hash, category, true))
+    return tonumber(NETSHOPPING.NET_GAMESERVER_GET_PRICE(hash, 0x57DE404E, true))
 end
 
-function TransactionManager:TriggerTransaction(hash, amount)
-    globals.set_int(4537311 + 1, 2147483646)
-    globals.set_int(4537311 + 7, 2147483647)
-    globals.set_int(4537311 + 6, 0)
-    globals.set_int(4537311 + 5, 0)
-    globals.set_int(4537311 + 3, hash)
-    globals.set_int(4537311 + 2, amount or self:GetPrice(hash, 0x57DE404E))
-    globals.set_int(4537311, 1)
-end
+function TransactionManager:TriggerTransaction(item_hash)
+	script.execute_as_script("shop_controller", function()
+		if NETSHOPPING.NET_GAMESERVER_BASKET_IS_ACTIVE() then
+			NETSHOPPING.NET_GAMESERVER_BASKET_END()
+		end
 
-function run_script(name) --start script thread
-    script.run_in_fiber(function (runscript)
-        SCRIPT.REQUEST_SCRIPT(name)  
-        repeat runscript:yield() until SCRIPT.HAS_SCRIPT_LOADED(name)
-        SYSTEM.START_NEW_SCRIPT(name, 5000)
-        SCRIPT.SET_SCRIPT_AS_NO_LONGER_NEEDED(name)
-    end)
+		local status, tranny_id = NETSHOPPING.NET_GAMESERVER_BEGIN_SERVICE(-1, 0x57DE404E, item_hash, 0x562592BB, self:GetPrice(item_hash), 2)
+		if status then
+			NETSHOPPING.NET_GAMESERVER_CHECKOUT_START(tranny_id)
+		end
+	end)
 end
 
 function TransactionManager:Init()
@@ -80,14 +74,17 @@ function TransactionManager:Init()
     local heist             = tab:add_tab("GUI_TAB_LUA_SCRIPTS")
     local crate             = tab:add_tab("GUI_TAB_LUA_SCRIPTS")
     local sub_atm           = tab:add_tab("GUI_TAB_LUA_SCRIPTS")
-    local sub_transaction   = tab:add_tab("GUI_TAB_LUA_SCRIPTS")
+    local sub_transaction  = tab:add_tab("GUI_TAB_LUA_SCRIPTS")
     local checkboxwb        = sub_atm:add_checkbox("Transfer Wallet Money To Bank") 
     local checkbox50k       = sub_transaction:add_checkbox("50K Loop")
     local sameline          = sub_transaction:add_sameline()
-    local checkbox180k      = sub_transaction:add_checkbox("180k Loop")
+    local checkbox100k     = sub_transaction:add_checkbox("100K Loop")
+    local sameline          = sub_transaction:add_sameline()
+    local checkbox180k     = sub_transaction:add_checkbox("180k Loop")
     local checkbox1m        = sub_transaction:add_checkbox("1M Loop")
     local sameline          = sub_transaction:add_sameline()
     local checkbox40m       = sub_transaction:add_checkbox("40M Loop")
+    local bountyloop       = sub_transaction:add_checkbox("Bounty Loop")
     local checkboxc5k       = chips:add_checkbox("Enable Chip 5k Loop")
     local checkboxcc        = crate:add_checkbox("Enable Ceo Crate Loop")
     local sub_transactionL  = tab:add_tab("GUI_TAB_LUA_SCRIPTS")
@@ -175,9 +172,23 @@ function TransactionManager:Init()
         end
     end)
 
+    script.register_looped("100ktransaction", function(script)
+        if(checkbox100k:is_enabled()) then 
+            self:TriggerTransaction(0x68341DC5);
+        end
+    end)
+
     script.register_looped("50ktransaction", function(script)
         if(checkbox50k:is_enabled()) then
             self:TriggerTransaction(0x610F9AB4)
+        end
+    end)
+
+    script.register_looped("bountyloop", function(script)
+        if(bountyloop:is_enabled()) then 
+            self:TriggerTransaction(0xC4F96E65);
+            script:sleep(1000);
+            self:TriggerTransaction(0x610F9AB4);
         end
     end)
 
