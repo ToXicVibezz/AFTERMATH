@@ -1,0 +1,81 @@
+{
+    "MOD_BRAKES": [
+        2,
+        0
+    ],
+    "MOD_ENGINE": [
+        3,
+        0
+    ],
+    "MOD_FRONTBUMPER": [
+        9,
+        0
+    ],
+    "MOD_FRONTWHEEL": [
+        5,
+        0
+    ],
+    "MOD_HOOD": [
+        1,
+        0
+    ],
+    "MOD_LIVERY": [
+        5,
+        0
+    ],
+    "MOD_SPOILERS": [
+        15,
+        0
+    ],
+    "MOD_SUSPENSION": [
+        2,
+        0
+    ],
+    "MOD_TIRESMOKE": "TOGGLE",
+    "MOD_TRANSMISSION": [
+        2,
+        0
+    ],
+    "clan_logo": 0,
+    "custom_primary_color": [
+        57,
+        219,
+        33
+    ],
+    "dash_color": 0,
+    "drift_tires": 0,
+    "has_collision": true,
+    "headlight_color": 255,
+    "interior_color": 1,
+    "is_visible": true,
+    "model_attachments": [],
+    "neon_color": [
+        255,
+        0,
+        255
+    ],
+    "neon_lights": [
+        false,
+        false,
+        false,
+        false
+    ],
+    "pearlescent_color": 0,
+    "plate_text": "60TZB654",
+    "plate_text_index": 0,
+    "primary_color": 0,
+    "radio_station": "RADIO_27_DLC_PRHEI4",
+    "secondary_color": 10,
+    "tire_can_burst": 0,
+    "tire_smoke_color": [
+        255,
+        255,
+        255
+    ],
+    "vehicle_attachments": [],
+    "vehicle_extras": [],
+    "vehicle_model_hash": 3663644634,
+    "vehicle_window_tint": 0,
+    "wheel_color": 156,
+    "wheel_type": 7
+}
