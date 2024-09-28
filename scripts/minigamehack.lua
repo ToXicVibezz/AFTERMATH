@@ -1,5 +1,5 @@
 gtaoversion = memory.scan_pattern("8B C3 33 D2 C6 44 24 20"):add(0x24):rip()
-if gtaoversion:get_string() == "3323" then
+if gtaoversion:get_string() == "3337" then
 gui.get_tab("GUI_TAB_LUA_SCRIPTS"):add_button("Mini-game instant complete", function()
 
     local local_H4_hack = 24880 --3258    --func_6004(&Local_24880, &(Local_24871[func_389(bParam1, 3) /*2*/]), 0, joaat("heist"), Global_786547.f_1);

@@ -1,7 +1,7 @@
 --This is Scripts Coded To Work In AFTERMATH Menu. I Take No More Credit , Other Than Of Offering This For Free With Free GTA Menu ;P
---Updated To Latest Game Build 1.69 3323
+--Updated To Latest Game Build 1.69 3337
 online_version = memory.scan_pattern("8B C3 33 D2 C6 44 24 20"):add(0x24):rip()
-if tonumber(online_version:get_string()) == 3323 then 
+if tonumber(online_version:get_string()) == 3337 then 
     gui.show_message("AFTERMATH", "Money Methods From Popular Scripts + Menus.")
 
 CEO2=277873
