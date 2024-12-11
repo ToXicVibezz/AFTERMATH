@@ -1,6 +1,6 @@
 ---@diagnostic disable: undefined-global, lowercase-global
 
-local game_build = 3351
+local game_build = 3407
 
 --------------------------------------------------------------------------------------------
 --[[
@@ -8,7 +8,7 @@ local game_build = 3351
   Credits: RXI (json.lua (https://github.com/rxi/json.lua) - for the original library)
 ]]--
 local function json()
-  local json = { _version = "1.1.2" }
+  local json = { _version = "1.1.3" }
   --encode
   local encode
 
@@ -1164,7 +1164,7 @@ if tonumber(online_version:get_string()) == game_build then
       end
       if ImGui.BeginTabItem("Business Safes") then
         if stats.get_int(MPx .. "_PROP_NIGHTCLUB") ~= 0 then
-          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("¤ Nightclub ¤")
+          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("ï¿½ Nightclub ï¿½")
           if INTERIOR.GET_INTERIOR_FROM_ENTITY(self.get_ped()) == 0 then
             ImGui.SameLine(); ImGui.Dummy(50, 1); ImGui.SameLine()
             if ImGui.Button("Teleport##nc") then
@@ -1194,7 +1194,7 @@ if tonumber(online_version:get_string()) == game_build then
             currNcSafeMoney / 250000, 160, 25, formatMoney(currNcSafeMoney)); ImGui.Separator()
         end
         if stats.get_int(MPx .. "_PROP_ARCADE") ~= 0 then
-          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("¤ Arcade ¤")
+          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("ï¿½ Arcade ï¿½")
           if INTERIOR.GET_INTERIOR_FROM_ENTITY(self.get_ped()) == 0 then
             ImGui.SameLine(); ImGui.Dummy(60, 1); ImGui.SameLine()
             if ImGui.Button("Teleport##arcade") then
@@ -1214,7 +1214,7 @@ if tonumber(online_version:get_string()) == game_build then
             formatMoney(currArSafeMoney)); ImGui.Separator()
         end
         if stats.get_int(MPx .. "_PROP_SECURITY_OFFICE") ~= 0 then
-          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("¤ Agency ¤")
+          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("ï¿½ Agency ï¿½")
           if INTERIOR.GET_INTERIOR_FROM_ENTITY(self.get_ped()) == 0 then
             ImGui.SameLine(); ImGui.Dummy(60, 1); ImGui.SameLine()
             if ImGui.Button("Teleport##agnc") then
@@ -1233,7 +1233,7 @@ if tonumber(online_version:get_string()) == game_build then
             currAgSafeMoney / 250000, 160, 25, formatMoney(currAgSafeMoney)); ImGui.Separator()
         end
         if stats.get_int(MPx .. "_PROP_CLUBHOUSE") ~= 0 then
-          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("¤ MC Clubhouse ¤")
+          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("ï¿½ MC Clubhouse ï¿½")
           if INTERIOR.GET_INTERIOR_FROM_ENTITY(self.get_ped()) == 0 then
             ImGui.SameLine(); ImGui.Dummy(10, 1); ImGui.SameLine()
             if ImGui.Button("Teleport##mc") then
@@ -1252,7 +1252,7 @@ if tonumber(online_version:get_string()) == game_build then
             currClubHouseBarProfit / 100000, 160, 25, formatMoney(currClubHouseBarProfit)); ImGui.Separator()
         end
         if stats.get_int(MPx .. "_PROP_BAIL_OFFICE") ~= 0 then
-          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("¤ Bail Office ¤")
+          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("ï¿½ Bail Office ï¿½")
           if INTERIOR.GET_INTERIOR_FROM_ENTITY(self.get_ped()) == 0 then
             ImGui.SameLine(); ImGui.Dummy(40, 1); ImGui.SameLine()
             if ImGui.Button("Teleport##bail") then
@@ -1272,7 +1272,7 @@ if tonumber(online_version:get_string()) == game_build then
             currBailSafe / 100000, 160, 25, formatMoney(currBailSafe)); ImGui.Separator()
         end
         if stats.get_int(MPx .. "_SALVAGE_YARD_OWNED") ~= 0 then
-          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("¤ Salvage Yard ¤")
+          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("ï¿½ Salvage Yard ï¿½")
           if INTERIOR.GET_INTERIOR_FROM_ENTITY(self.get_ped()) == 0 then
             ImGui.SameLine(); ImGui.Dummy(20, 1); ImGui.SameLine()
             if ImGui.Button("Teleport##salvage") then
