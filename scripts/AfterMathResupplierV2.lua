@@ -416,20 +416,20 @@ end
 online_version = memory.scan_pattern("8B C3 33 D2 C6 44 24 20"):add(0x24):rip()
 if tonumber(online_version:get_string()) == game_build then 
   aftermath_resupplier = gui.get_tab("GUI_TAB_LUA_SCRIPTS")
-   default_config        = {
-    cashUpdgrade1   = false,
-    cashUpdgrade2   = false,
-    cokeUpdgrade1   = false,
-    cokeUpdgrade2   = false,
-    methUpdgrade1   = false,
-    methUpdgrade2   = false,
-    weedUpdgrade1   = false,
-    weedUpdgrade2   = false,
-    fdUpdgrade1     = false,
-    fdUpdgrade2     = false,
-    bunkerUpdgrade1 = false,
-    bunkerUpdgrade2 = false,
-    acidUpdgrade    = false,
+  default_config        = {
+        cashUpdgrade1   = false,
+        cashUpdgrade2   = false,
+        cokeUpdgrade1   = false,
+        cokeUpdgrade2   = false,
+        methUpdgrade1   = false,
+        methUpdgrade2   = false,
+        weedUpdgrade1   = false,
+        weedUpdgrade2   = false,
+        fdUpdgrade1     = false,
+        fdUpdgrade2     = false,
+        bunkerUpdgrade1 = false,
+        bunkerUpdgrade2 = false,
+        acidUpdgrade    = false,
   }
   local hangarOwned     = false
   local fCashOwned      = false
@@ -651,7 +651,7 @@ if tonumber(online_version:get_string()) == game_build then
                 stats.set_bool_masked(MPx .. "_DLC22022PSTAT_BOOL3", true, 9)
               end)
             end
-            ImGui.SameLine(); hangarLoop, used = ImGui.Checkbox("Auto-Fill", hangarLoop, true)
+            ImGui.SameLine(); hangarLoop, used = ImGui.Checkbox("Auto-Fill", hangarLoop)
             if hangarLoop then
               script.run_in_fiber(function(hangarSupp)
                 repeat
@@ -693,7 +693,7 @@ if tonumber(online_version:get_string()) == game_build then
               end
             end)
           end
-          ImGui.SameLine(); ceoLoop, used = ImGui.Checkbox("Auto-Fill##ceo", ceoLoop, true)
+          ImGui.SameLine(); ceoLoop, used = ImGui.Checkbox("Auto-Fill##ceo", ceoLoop)
           if ceoLoop then
             script.run_in_fiber(function(ceoloop)
               repeat
@@ -730,7 +730,7 @@ if tonumber(online_version:get_string()) == game_build then
           if math.ceil(cashSupply) < 100 then
             ImGui.SameLine()
             if ImGui.Button(" Fill ##FakeCash") then
-              globals.set_int(1663174 + 0 + 1, 1)
+              globals.set_int(1667995 + 0 + 1, 1)
             end
             ImGui.SameLine(); ImGui.Dummy(5, 1)
           end
@@ -756,7 +756,7 @@ if tonumber(online_version:get_string()) == game_build then
           if math.ceil(cokeSupply) < 100 then
             ImGui.SameLine()
             if ImGui.Button(" Fill ##Cocaine") then
-              globals.set_int(1663174 + 1 + 1, 1)
+              globals.set_int(1667995 + 1 + 1, 1)
             end
                         ImGui.SameLine(); ImGui.Dummy(5, 1)
           end
@@ -782,7 +782,7 @@ if tonumber(online_version:get_string()) == game_build then
           if math.ceil(methSupply) < 100 then
             ImGui.SameLine()
             if ImGui.Button(" Fill ##Meth") then
-              globals.set_int(1663174 + 2 + 1, 1)
+              globals.set_int(1667995 + 2 + 1, 1)
             end
                         ImGui.SameLine(); ImGui.Dummy(5, 1)
           end
@@ -808,7 +808,7 @@ if tonumber(online_version:get_string()) == game_build then
           if math.ceil(weedSupply) < 100 then
             ImGui.SameLine()
             if ImGui.Button(" Fill ##Weed") then
-              globals.set_int(1663174 + 3 + 1, 1)
+              globals.set_int(1667995 + 3 + 1, 1)
             end
                         ImGui.SameLine(); ImGui.Dummy(5, 1)
           end
@@ -833,7 +833,7 @@ if tonumber(online_version:get_string()) == game_build then
           if math.ceil(dfSupply) < 100 then
             ImGui.SameLine()
             if ImGui.Button(" Fill ##DocumentForgery") then
-              globals.set_int(1663174 + 4 + 1, 1)
+              globals.set_int(1667995 + 4 + 1, 1)
             end
             ImGui.SameLine(); ImGui.Dummy(5, 1)
           end
@@ -859,7 +859,7 @@ if tonumber(online_version:get_string()) == game_build then
           if math.ceil(bunkerSupply) < 100 then
             ImGui.SameLine()
             if ImGui.Button(" Fill ##Bunker") then
-              globals.set_int(1663174 + 5 + 1, 1)
+              globals.set_int(1667995 + 5 + 1, 1)
             end
             ImGui.SameLine(); ImGui.Dummy(5, 1)
           end
@@ -885,7 +885,7 @@ if tonumber(online_version:get_string()) == game_build then
           if math.ceil(acidSupply) < 100 then
             ImGui.SameLine()
             if ImGui.Button(" Fill ##AcidLab") then
-              globals.set_int(1663174 + 6 + 1, 1)
+              globals.set_int(1667995 + 6 + 1, 1)
             end
             ImGui.SameLine(); ImGui.Dummy(5, 1)
           end
@@ -1164,7 +1164,7 @@ if tonumber(online_version:get_string()) == game_build then
       end
       if ImGui.BeginTabItem("Business Safes") then
         if stats.get_int(MPx .. "_PROP_NIGHTCLUB") ~= 0 then
-          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("ï¿½ Nightclub ï¿½")
+          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("¤ Nightclub ¤")
           if INTERIOR.GET_INTERIOR_FROM_ENTITY(self.get_ped()) == 0 then
             ImGui.SameLine(); ImGui.Dummy(50, 1); ImGui.SameLine()
             if ImGui.Button("Teleport##nc") then
@@ -1194,7 +1194,7 @@ if tonumber(online_version:get_string()) == game_build then
             currNcSafeMoney / 250000, 160, 25, formatMoney(currNcSafeMoney)); ImGui.Separator()
         end
         if stats.get_int(MPx .. "_PROP_ARCADE") ~= 0 then
-          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("ï¿½ Arcade ï¿½")
+          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("¤ Arcade ¤")
           if INTERIOR.GET_INTERIOR_FROM_ENTITY(self.get_ped()) == 0 then
             ImGui.SameLine(); ImGui.Dummy(60, 1); ImGui.SameLine()
             if ImGui.Button("Teleport##arcade") then
@@ -1214,7 +1214,7 @@ if tonumber(online_version:get_string()) == game_build then
             formatMoney(currArSafeMoney)); ImGui.Separator()
         end
         if stats.get_int(MPx .. "_PROP_SECURITY_OFFICE") ~= 0 then
-          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("ï¿½ Agency ï¿½")
+          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("¤ Agency ¤")
           if INTERIOR.GET_INTERIOR_FROM_ENTITY(self.get_ped()) == 0 then
             ImGui.SameLine(); ImGui.Dummy(60, 1); ImGui.SameLine()
             if ImGui.Button("Teleport##agnc") then
@@ -1233,7 +1233,7 @@ if tonumber(online_version:get_string()) == game_build then
             currAgSafeMoney / 250000, 160, 25, formatMoney(currAgSafeMoney)); ImGui.Separator()
         end
         if stats.get_int(MPx .. "_PROP_CLUBHOUSE") ~= 0 then
-          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("ï¿½ MC Clubhouse ï¿½")
+          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("¤ MC Clubhouse ¤")
           if INTERIOR.GET_INTERIOR_FROM_ENTITY(self.get_ped()) == 0 then
             ImGui.SameLine(); ImGui.Dummy(10, 1); ImGui.SameLine()
             if ImGui.Button("Teleport##mc") then
@@ -1252,7 +1252,7 @@ if tonumber(online_version:get_string()) == game_build then
             currClubHouseBarProfit / 100000, 160, 25, formatMoney(currClubHouseBarProfit)); ImGui.Separator()
         end
         if stats.get_int(MPx .. "_PROP_BAIL_OFFICE") ~= 0 then
-          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("ï¿½ Bail Office ï¿½")
+          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("¤ Bail Office ¤")
           if INTERIOR.GET_INTERIOR_FROM_ENTITY(self.get_ped()) == 0 then
             ImGui.SameLine(); ImGui.Dummy(40, 1); ImGui.SameLine()
             if ImGui.Button("Teleport##bail") then
@@ -1272,7 +1272,7 @@ if tonumber(online_version:get_string()) == game_build then
             currBailSafe / 100000, 160, 25, formatMoney(currBailSafe)); ImGui.Separator()
         end
         if stats.get_int(MPx .. "_SALVAGE_YARD_OWNED") ~= 0 then
-          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("ï¿½ Salvage Yard ï¿½")
+          ImGui.Spacing(); ImGui.Spacing(); ImGui.Text("¤ Salvage Yard ¤")
           if INTERIOR.GET_INTERIOR_FROM_ENTITY(self.get_ped()) == 0 then
             ImGui.SameLine(); ImGui.Dummy(20, 1); ImGui.SameLine()
             if ImGui.Button("Teleport##salvage") then
