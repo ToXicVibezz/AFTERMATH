@@ -22,7 +22,7 @@
 -- SOFTWARE.
 --
 
-local CasinoPacinoJson = { _version = "0.1.2" }
+local CasinoPacinoJson = { _version = "0.1.3" }
 
 -------------------------------------------------------------------------------
 -- Encode
