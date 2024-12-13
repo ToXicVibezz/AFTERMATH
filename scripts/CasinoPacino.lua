@@ -1,4 +1,4 @@
-local json = require('CasinoPacinoJson')
+local json = require('CasinoPacinoJson') -- Script Made and Maintained by gir489returns
 
 local casino_gui = gui.get_tab("GUI_TAB_LUA_SCRIPTS") --IT'S NOT AL ANYMORE! IT'S DUNK!
 
