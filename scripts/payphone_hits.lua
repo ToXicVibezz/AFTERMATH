@@ -1,15 +1,15 @@
 local payphone_hits_tab = gui.get_tab("GUI_TAB_LUA_SCRIPTS")
 
-local PAYPHONE_FLOW  = 2709088
-local FMMC_VARIATION = 2738934
-local PAYPHONE_DATA  = 5675
+local PAYPHONE_FLOW  = 2709501
+local FMMC_VARIATION = 2739811
+local PAYPHONE_DATA  = 5778
 
-local GPBL = 0x679D39
+local GPBL = 0x69FAE2
 
 local PAYPHONE_STATE_WAIT       = 0
-local PAYPHONE_STATE_AVAILABLE  = 1
+--local PAYPHONE_STATE_AVAILABLE  = 1
 local PAYPHONE_STATE_ACTIVE     = 2
-local PAYPHONE_STATE_LAUNCHING  = 3
+--local PAYPHONE_STATE_LAUNCHING  = 3
 local PAYPHONE_STATE_ON_MISSION = 4
 
 local ASSASSINATION_BONUSES = {
@@ -50,13 +50,33 @@ local selected_subvariation = 0
 local force_selected        = false
 
 local payphone_state = 0
+local is_host        = false
+local cooldown_str   = ""
+
+local function GET_COOLDOWN_STR()
+    local epoch    = NETWORK.GET_CLOUD_TIME_AS_INT()
+    local cooldown = stats.get_int("MPX_PAYPHONE_HIT_CDTIMER")
+
+    if epoch > cooldown then
+        return "Request is available."
+    end
+
+    local time_left = (cooldown - epoch) * 1000
+    local ms_to_sec = time_left / 1000
+    local minutes   = math.floor(ms_to_sec / 60)
+    local seconds   = math.floor(ms_to_sec % 60)
+
+    return string.format("Next request is available in %02d:%02d.", minutes, seconds)
+end
 
 script.register_looped("Payphone Hits", function()
     payphone_state = globals.get_int(PAYPHONE_FLOW)
-    
+    is_host        = NETWORK.NETWORK_GET_HOST_OF_SCRIPT("fm_content_payphone_hit", 0, 0)
+    cooldown_str   = GET_COOLDOWN_STR()
+
     if force_selected then
-        globals.set_int(FMMC_VARIATION + 5249 + 347, selected_variation)
-        locals.set_int("fm_content_payphone_hit", PAYPHONE_DATA + 742 + 2, ASSASSINATION_BONUSES[selected_variation][selected_subvariation + 1])
+        globals.set_int(FMMC_VARIATION + 5265 + 347, selected_variation)
+        locals.set_int("fm_content_payphone_hit", PAYPHONE_DATA + 749 + 2, ASSASSINATION_BONUSES[selected_variation][selected_subvariation + 1])
     end
 end)
 
@@ -74,6 +94,8 @@ payphone_hits_tab:add_imgui(function()
 
     ImGui.Separator()
 
+    ImGui.Text(cooldown_str)
+
     if ImGui.Button("Request Payphone Hit") then
         if payphone_state == PAYPHONE_STATE_WAIT then
             local value = globals.get_int(PAYPHONE_FLOW + 1 + 1) | (1 << 0)
@@ -81,6 +103,10 @@ payphone_hits_tab:add_imgui(function()
         else
             gui.show_error("Payphone Hits", "Not available at the moment.")
         end
+    end
+
+    if ImGui.IsItemHovered() then
+        ImGui.SetTooltip("You won't get paid if you request a hit when cooldown is active.")
     end
 
     if ImGui.Button("Teleport to Payphone") then
@@ -94,44 +120,28 @@ payphone_hits_tab:add_imgui(function()
         end)
     end
 
-    if ImGui.Button("Skip Cooldown") then
-        script.run_in_fiber(function()
-            local cooldown = stats.get_int("MPX_PAYPHONE_HIT_CDTIMER")
-            local epoch    = NETWORK.GET_CLOUD_TIME_AS_INT()
-            if epoch < cooldown then
-                stats.set_int("MPX_PAYPHONE_HIT_CDTIMER", epoch - 1000)
-            else
-                gui.show_error("Payphone Hits", "Not available at the moment.")
-            end
-        end)
-    end
-
-    if ImGui.IsItemHovered() then
-        ImGui.BeginTooltip()
-        ImGui.PushTextWrapPos(ImGui.GetFontSize() * 25)
-        ImGui.TextWrapped("WARNING!\10\10Disabling the cooldown and finishing multiple hits back to back may cause issues. Use at your own risk.")
-        ImGui.PopTextWrapPos()
-        ImGui.EndTooltip()
-    end
-
-    if ImGui.Button("Complete Assassination Bonus") then
+    if ImGui.Button("Instant Finish Payphone Hit") then
         if payphone_state == PAYPHONE_STATE_ON_MISSION then
-            local value = locals.get_int("fm_content_payphone_hit", PAYPHONE_DATA + 740 + 1) | (1 << 1)
-            locals.set_int("fm_content_payphone_hit", PAYPHONE_DATA + 740 + 1, value)
+            if is_host then
+                locals.set_int("fm_content_payphone_hit", PAYPHONE_DATA + 689, 3)
+            else
+                gui.show_error("Payphone Hits", "You must be the mission host.")
+            end
         else
             gui.show_error("Payphone Hits", "Not available at the moment.")
         end
     end
 
-    if ImGui.Button("Instant Finish Payphone Hit") then
+    if ImGui.Button("Complete Assassination Bonus") then
         if payphone_state == PAYPHONE_STATE_ON_MISSION then
-            script.execute_as_script("fm_content_payphone_hit", function()
-                if NETWORK.NETWORK_IS_HOST_OF_THIS_SCRIPT() then
-                    locals.set_int("fm_content_payphone_hit", PAYPHONE_DATA + 683, 3)
-                end
-            end)
+            if is_host then
+                local value = locals.get_int("fm_content_payphone_hit", PAYPHONE_DATA + 747 + 1) | (1 << 1)
+                locals.set_int("fm_content_payphone_hit", PAYPHONE_DATA + 747 + 1, value)
+            else
+                gui.show_error("Payphone Hits", "You must be the mission host.")
+            end
         else
-            gui.show_error("Payphone Hits", "Request a hit first!")
+            gui.show_error("Payphone Hits", "Not available at the moment.")
         end
     end
 end)
