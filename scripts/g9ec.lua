@@ -2,6 +2,7 @@ local is_content_item_locked = memory.scan_pattern("89 54 24 ? 48 83 EC ? 85 D2"
 
 -- Get more hashes from freemode.
 local G9EC_LOCK_HASHES = {
+    [joaat("CU_X24_CLOTHES_G9EC")]   = true,
     [joaat("CU_SUM24_CLOTHES_G9EC")] = true,
     [joaat("CU_SUM24_MASKS_G9EC")]   = true,
     [joaat("CU_X23_MASKS_G9EC")]     = true,

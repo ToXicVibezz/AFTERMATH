@@ -7,7 +7,7 @@ local should_run_script = false
 
 -- It's actually possible to save blacklisted vehicles as PV, but doing so requires patching a lot of scripts, and once the patches are disabled, the game will instantly delete these vehicles anyway, so it's not worth it.
 local function IS_VEHICLE_VALID_FOR_PV(vehicle_hash)
-    return scr_function.call_script_function("freemode", 0x8AD5E, "bool", {
+    return scr_function.call_script_function("freemode", 0x8D3BD, "bool", {
         { "int", vehicle_hash }
     })
 end

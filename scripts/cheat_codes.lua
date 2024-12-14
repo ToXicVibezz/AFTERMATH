@@ -12,8 +12,8 @@ event.register_handler(menu_event.ScriptsReloaded, function()
 end)
 
 script.register_looped("Cheat Codes", function(sc)
-    globals.set_int(33197, 0) -- Disable all "IS_CHEAT_DISABLED" bits
-    globals.set_int(33199, 0) -- Bypass Achievement Disabler
+    globals.set_int(33336, 0) -- Disable all "IS_CHEAT_DISABLED" bits
+    globals.set_int(33338, 0) -- Bypass Achievement Disabler
     if not script.is_active("cheat_controller") then
         repeat
             SCRIPT.REQUEST_SCRIPT("cheat_controller")
