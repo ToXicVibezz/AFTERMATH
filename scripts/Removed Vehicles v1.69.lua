@@ -202,4 +202,3 @@ VH:add_button("Enable Removed Vehicles", function()
     globals.set_int(262145 + 25381, 1)
     globals.set_int(262145 + 34599, 1)
 end)
-

@@ -333,14 +333,14 @@ tokyodrift:add_imgui(function()
       end)
     end
 
-    ImGui.SameLine(); ImGui.Dummy(32, 1); ImGui.SameLine(); nosPurge, _ = ImGui.Checkbox("NOS Purge", nosPurge, true)
+    ImGui.SameLine(); ImGui.Dummy(35, 1); ImGui.SameLine(); nosPurge, _ = ImGui.Checkbox("NOS Purge", nosPurge, true)
     widgetToolTip(false, "Press [X] on keyboard or [A] on controller to purge your NOS Fast & Furious style.")
 
     popsNbangs, _ = ImGui.Checkbox("Pops & Bangs", popsNbangs, true)
     widgetToolTip(false, "Enables exhaust pops whenever you let go of [Accelerate] from high RPM.")
 
     if popsNbangs then
-      ImGui.SameLine(); ImGui.Dummy(37, 1); ImGui.SameLine(); louderPops, _ = ImGui.Checkbox("Louder Pops", louderPops,
+      ImGui.SameLine(); ImGui.Dummy(41, 1); ImGui.SameLine(); louderPops, _ = ImGui.Checkbox("Louder Pops", louderPops,
         true)
       widgetToolTip(false, "Makes your pops & bangs sound extremely loud.")
       if not louderPops then
