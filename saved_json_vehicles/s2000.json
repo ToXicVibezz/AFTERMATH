@@ -1,0 +1,115 @@
+{
+    "MOD_AIRFILTER": [
+        6,
+        0
+    ],
+    "MOD_ARMOR": [
+        4,
+        0
+    ],
+    "MOD_BRAKES": [
+        2,
+        0
+    ],
+    "MOD_DASHBOARD": [
+        2,
+        0
+    ],
+    "MOD_DOORSPEAKERS": [
+        0,
+        0
+    ],
+    "MOD_ENGINE": [
+        3,
+        0
+    ],
+    "MOD_ENGINEBLOCK": [
+        2,
+        0
+    ],
+    "MOD_EXHAUST": [
+        6,
+        0
+    ],
+    "MOD_FENDER": [
+        6,
+        0
+    ],
+    "MOD_FRONTBUMPER": [
+        0,
+        0
+    ],
+    "MOD_FRONTWHEEL": [
+        15,
+        0
+    ],
+    "MOD_GRILLE": [
+        5,
+        0
+    ],
+    "MOD_HOOD": [
+        5,
+        0
+    ],
+    "MOD_SEATS": [
+        11,
+        0
+    ],
+    "MOD_SPOILERS": [
+        1,
+        0
+    ],
+    "MOD_STRUTS": [
+        2,
+        0
+    ],
+    "MOD_SUSPENSION": [
+        3,
+        0
+    ],
+    "MOD_TIRESMOKE": "TOGGLE",
+    "MOD_TRANSMISSION": [
+        2,
+        0
+    ],
+    "MOD_TURBO": "TOGGLE",
+    "MOD_XENONHEADLIGHTS": "TOGGLE",
+    "clan_logo": 0,
+    "convertable_state": 0,
+    "dash_color": 111,
+    "drift_tires": 0,
+    "has_collision": true,
+    "headlight_color": 255,
+    "interior_color": 3,
+    "is_visible": true,
+    "model_attachments": [],
+    "neon_color": [
+        255,
+        0,
+        255
+    ],
+    "neon_lights": [
+        false,
+        false,
+        false,
+        false
+    ],
+    "pearlescent_color": 111,
+    "plate_text": "04RRA036",
+    "plate_text_index": 1,
+    "primary_color": 70,
+    "radio_station": "OFF",
+    "secondary_color": 70,
+    "tire_can_burst": 1,
+    "tire_smoke_color": [
+        255,
+        255,
+        255
+    ],
+    "vehicle_attachments": [],
+    "vehicle_extras": [],
+    "vehicle_model_hash": 3842363289,
+    "vehicle_window_tint": 1,
+    "wheel_color": 156,
+    "wheel_type": 8
+}
