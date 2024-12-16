@@ -74,17 +74,17 @@ function TransactionManager:Init()
     local heist             = tab:add_tab("GUI_TAB_LUA_SCRIPTS")
     local crate             = tab:add_tab("GUI_TAB_LUA_SCRIPTS")
     local sub_atm           = tab:add_tab("GUI_TAB_LUA_SCRIPTS")
-    local sub_transaction  = tab:add_tab("GUI_TAB_LUA_SCRIPTS")
+    local sub_transaction   = tab:add_tab("GUI_TAB_LUA_SCRIPTS")
     local checkboxwb        = sub_atm:add_checkbox("Transfer Wallet Money To Bank") 
     local checkbox50k       = sub_transaction:add_checkbox("50K Loop")
     local sameline          = sub_transaction:add_sameline()
-    local checkbox100k     = sub_transaction:add_checkbox("100K Loop")
+    local checkbox100k      = sub_transaction:add_checkbox("100K Loop")
     local sameline          = sub_transaction:add_sameline()
-    local checkbox180k     = sub_transaction:add_checkbox("180k Loop")
+    local checkbox180k      = sub_transaction:add_checkbox("180k Loop")
     local checkbox1m        = sub_transaction:add_checkbox("1M Loop")
     local sameline          = sub_transaction:add_sameline()
     local checkbox40m       = sub_transaction:add_checkbox("40M Loop")
-    local bountyloop       = sub_transaction:add_checkbox("Bounty Loop")
+    local bountyloop        = sub_transaction:add_checkbox("Bounty Loop")
     local checkboxc5k       = chips:add_checkbox("Enable Chip 5k Loop")
     local checkboxcc        = crate:add_checkbox("Enable Ceo Crate Loop")
     local sub_transactionL  = tab:add_tab("GUI_TAB_LUA_SCRIPTS")
@@ -195,22 +195,22 @@ function TransactionManager:Init()
     script.register_looped("40mtransaction", function(script)
         if(checkbox40m:is_enabled()) then
             self:TriggerTransaction(0x176D9D54)
-	yield(3000)
+	script.yield(3000)
 	self:TriggerTransaction(0xED97AFC1, 7000000)
-	yield(3000)
+	script.yield(3000)
 	self:TriggerTransaction(0xA174F633, 15000000)
-	yield(3000)
+	script.yield(3000)
 	self:TriggerTransaction(0x314FB8B0, 1000000)
-	yield(3000)
+	script.yield(3000)
 	self:TriggerTransaction(0x4B6A869C, 2000000)
-	yield(40000)
+	script.yield(40000)
         end
     end)
 
     script.register_looped("5kchiptransaction", function(script)
         if(checkboxc5k:is_enabled()) then
             globals.set_int(CHIP, 1)
-	yield(3000)
+	script:yield(3000)
         end
     end)
     
@@ -234,7 +234,3 @@ else
   updateD = gui.get_tab("GUI_TAB_LUA_SCRIPTS")
   updateD:add_text("Aftermath Money is not up-to-date.\nPlease update the script.")
 end
-
--- all credits to me and phobos (Very Based) thanks for making the code more optimized and make it looks better :) 
--- pessi_v0.2 SCRIPT
--- YimCeo v0.5 From UnknownCheats // Slon Script 
