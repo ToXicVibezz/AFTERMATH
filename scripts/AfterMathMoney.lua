@@ -158,17 +158,14 @@ function TransactionManager:Init()
     end)
 
     script.register_looped("1mtransaction", function(script)
-        if checkbox1m:is_enabled() then
+        if(checkbox1m:is_enabled()) then
             self:TriggerTransaction(0x615762F1)
         end
     end)
     
     script.register_looped("180ktransaction", function(script)
-        if checkbox180k:is_enabled() == true then
-            checkbox180k = not checkbox180k
-            if checkbox180k then
-                self:TriggerTransaction(0x615762F1)
-            end
+        if(checkbox180k:is_enabled()) then
+            self:TriggerTransaction(0x615762F1)
         end
     end)
 
@@ -210,7 +207,7 @@ function TransactionManager:Init()
     script.register_looped("5kchiptransaction", function(script)
         if(checkboxc5k:is_enabled()) then
             globals.set_int(CHIP, 1)
-	script:yield(3000)
+	script.yield(3000)
         end
     end)
     
