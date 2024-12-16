@@ -1,20 +1,17 @@
---This is Scripts Coded To Work In AFTERMATH Menu. I Take No More Credit , Other Than Of Offering This For Free With Free GTA Menu ;P
---Updated To Latest Game Build 1.70 3411
 online_version = memory.scan_pattern("8B C3 33 D2 C6 44 24 20"):add(0x24):rip()
 if tonumber(online_version:get_string()) == 3411 then 
     gui.show_message("AFTERMATH", "Money Methods From Popular Scripts + Menus.")
 
-CEO2=277873
-CEO3=277874
-CEO1=278108
-CHIP=1963515
+local CEO2=277873
+local CEO3=277874
+local CEO1=278108
+local CHIP=1963515
 
 local TransactionManager <const> = {};
 TransactionManager.__index = TransactionManager
 
 function TransactionManager.new()
     local instance = setmetatable({}, TransactionManager);
-
     instance.Transactions = {
         {label = "15M (Bend Job Limited)", hash = 0x176D9D54},
         {label = "15M (Bend Bonus Limited)", hash = 0xA174F633},
@@ -38,7 +35,6 @@ function TransactionManager.new()
         {label = "190K (Vehicle Sales Money Limited)",   hash = 0xFD389995},
         {label = "50K (Stealth 50K)", hash = 0x610F9AB4}
     }
-
     return instance;
 end
 
@@ -60,7 +56,6 @@ function TransactionManager:TriggerTransaction(item_hash)
 		if NETSHOPPING.NET_GAMESERVER_BASKET_IS_ACTIVE() then
 			NETSHOPPING.NET_GAMESERVER_BASKET_END()
 		end
-
 		local status, tranny_id = NETSHOPPING.NET_GAMESERVER_BEGIN_SERVICE(-1, 0x57DE404E, item_hash, 0x562592BB, self:GetPrice(item_hash), 2)
 		if status then
 			NETSHOPPING.NET_GAMESERVER_CHECKOUT_START(tranny_id)
