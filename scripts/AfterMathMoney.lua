@@ -167,7 +167,7 @@ function TransactionManager:Init()
 
     script.register_looped("100ktransaction", function(script)
         if(checkbox100k:is_enabled()) then 
-            self:TriggerTransaction(0x68341DC5);
+            self:TriggerTransaction(0x68341DC5)
         end
     end)
 
@@ -179,24 +179,24 @@ function TransactionManager:Init()
 
     script.register_looped("bountyloop", function(script)
         if(bountyloop:is_enabled()) then 
-            self:TriggerTransaction(0xC4F96E65);
+            self:TriggerTransaction(0xC4F96E65)
             script:sleep(1000);
-            self:TriggerTransaction(0x610F9AB4);
+            self:TriggerTransaction(0x610F9AB4)
         end
     end)
 
     script.register_looped("40mtransaction", function(script)
         if(checkbox40m:is_enabled()) then
             self:TriggerTransaction(0x176D9D54)
-	script.yield(3000)
-	self:TriggerTransaction(0xED97AFC1, 7000000)
-	script.yield(3000)
-	self:TriggerTransaction(0xA174F633, 15000000)
-	script.yield(3000)
-	self:TriggerTransaction(0x314FB8B0, 1000000)
-	script.yield(3000)
-	self:TriggerTransaction(0x4B6A869C, 2000000)
-	script.yield(40000)
+            script.yield(3000)
+            self:TriggerTransaction(0xED97AFC1, 7000000)
+            script.yield(3000)
+            self:TriggerTransaction(0xA174F633, 15000000)
+            script.yield(3000)
+            self:TriggerTransaction(0x314FB8B0, 1000000)
+            script.yield(3000)
+            self:TriggerTransaction(0x4B6A869C, 2000000)
+            script.yield(40000)
         end
     end)
 
