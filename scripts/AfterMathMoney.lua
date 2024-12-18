@@ -2,9 +2,10 @@ online_version = memory.scan_pattern("8B C3 33 D2 C6 44 24 20"):add(0x24):rip()
 if tonumber(online_version:get_string()) == 3411 then 
     gui.show_message("AFTERMATH", "Money Methods From Popular Scripts + Menus.")
 
-local CEO2=277873
-local CEO3=277874
-local CEO1=278108
+local CEO2=277644
+local CEO3=277645
+local CEO1=277877
+
 local CHIP=1963515
 
 local TransactionManager <const> = {};
@@ -117,27 +118,27 @@ function TransactionManager:Init()
 
         if checkboxcc:is_enabled() == true then
             if locals.get_int(ci, 2) == 1 then
-                locals.set_int(ci, 1136, 1)
-                locals.set_int(ci, 596, 0)
-                locals.set_int(ci, 1125, 0) 
-                locals.set_int(ci, 548, 7)
+                locals.set_int(ci, 1158, 1)
+                locals.set_int(ci, 618, 0)
+                locals.set_int(ci, 1147, 0) 
+                locals.set_int(ci, 570, 7)
                 script:sleep(500)
-                locals.set_int(ci, 542, 99999)  
+                locals.set_int(ci, 564, 99999)  
             end
             if locals.get_int(cs, 2) == 1 then
                 script:sleep(500)
-                locals.set_int(cs, 737, 1)
+                locals.set_int(cs, 760, 1)
                 script:sleep(200)
-                locals.set_int(cs, 738, 1)
+                locals.set_int(cs, 759, 1)
                 script:sleep(200)
-                locals.set_int(cs, 556, 3012)
+                locals.set_int(cs, 560, 3012)
                 script:sleep(1000)
             end
             if locals.get_int(cb, 2) == 1 then
-                locals.set_int(cb, 604, 1)
-                locals.set_int(cb, 600, 111)
-                locals.set_int(cb, 790, 6)
-                locals.set_int(cb, 791, 4)
+                locals.set_int(cb, 626, 1)
+                locals.set_int(cb, 622, 111)
+                locals.set_int(cb, 812, 6)
+                locals.set_int(cb, 813, 4)
                 gui.show_message("Your Warehouse Is Now Full!")
             end
             if locals.get_int(ci, 2) ~= 1 then  
