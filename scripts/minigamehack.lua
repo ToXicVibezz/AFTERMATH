@@ -108,6 +108,28 @@ gui.get_tab("GUI_TAB_LUA_SCRIPTS"):add_button("Mini-game instant complete", func
     if SCRIPT.GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("fm_content_business_battles")) ~= 0 then
         locals.set_int("fm_content_business_battles", 4173 + 24, 7)
     end
+
+    if SCRIPT.GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("am_mp_hotwire")) ~= 0 then
+        locals.set_int("am_mp_hotwire", 298, 2) 
+    end
+
+    if SCRIPT.GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("word_hack")) ~= 0 then 
+        locals.set_int("word_hack", 49 + 53, 5)
+    end
+
+    if SCRIPT.GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("circuitblockhack")) ~= 0 then
+        locals.set_int("circuitblockhack", 49 + 9, 2) 
+    end
+    if SCRIPT.GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("fm_content_hacker_house_finale")) ~= 0 then
+        locals.set_int("fm_content_hacker_house_finale", 5951 + 1, 5) 
+    end
+
+    local_mp2024_02_m4 = 5097 
+    local_mp2024_02_m4_v = locals.get_int("fm_content_hacker_whistle_prep", local_mp2024_02_m4)
+    if (local_mp2024_02_m4_v & (1 << 26)) == 0 then
+        local_mp2024_02_m4_v = local_mp2024_02_m4_v ~ (1 << 26)
+        locals.set_int("fm_content_hacker_whistle_prep", local_mp2024_02_m4, local_mp2024_02_m4_v)
+    end
  
     -- int* iParam0, int iParam1, int iParam2, int iParam3, int iParam4, var uParam5, var uParam6, int iParam7, bool bParam8, bool bParam9, bool bParam10, bool bParam11, bool bParam12, bool bParam13, int iParam14, int iParam15, bool bParam16, bool bParam17, bool bParam18, bool bParam19, bool bParam20, bool bParam21
     local minigamelocaltable = {
