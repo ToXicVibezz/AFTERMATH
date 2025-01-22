@@ -781,4 +781,3 @@ HeistEditor:add_sameline()
 HeistEditor:add_button("Bypass Act III hack", function()
 	locals.set_int(FMC, DDSHl, 3)
 end)
-
