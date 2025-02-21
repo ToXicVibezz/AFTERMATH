@@ -1,5 +1,5 @@
 gtaoversion = memory.scan_pattern("8B C3 33 D2 C6 44 24 20"):add(0x24):rip()
-if gtaoversion:get_string() == "3411" then
+if gtaoversion:get_string() == "3442" then
 gui.get_tab("GUI_TAB_LUA_SCRIPTS"):add_button("Mini-game instant complete", function()
     local local_H3_hack_1 = 53087  
     local local_H3_hack_2 = 54153 
@@ -89,7 +89,7 @@ gui.get_tab("GUI_TAB_LUA_SCRIPTS"):add_button("Mini-game instant complete", func
         locals.set_int("fm_mission_controller_2020", 1746, 3) 
     end
     if SCRIPT.GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("fm_content_island_heist")) ~= 0 then
-        locals.set_int("fm_content_island_heist", 787, locals.get_int("fm_content_island_heist", 767))
+        locals.set_int("fm_content_island_heist", 787, locals.get_int("fm_content_island_heist", 788))
         locals.set_int("fm_content_island_heist", 789, 3) 
         locals.set_int("fm_content_island_heist", 10162 + 24, 7)
     end
