@@ -1,0 +1,46 @@
+{
+    "clan_logo": 0,
+    "dash_color": 0,
+    "has_collision": true,
+    "headlight_color": 255,
+    "interior_color": 0,
+    "is_invincible": true,
+    "is_visible": true,
+    "model_attachments": [],
+    "neon_color": [
+        255,
+        0,
+        255
+    ],
+    "neon_lights": [
+        false,
+        false,
+        false,
+        false
+    ],
+    "pearlescent_color": 0,
+    "plate_text": "21QVD591",
+    "plate_text_index": 0,
+    "primary_color": 48,
+    "radio_station": "OFF",
+    "secondary_color": 0,
+    "vehicle_attachments": [],
+    "vehicle_extras": [
+        [
+            1,
+            false
+        ],
+        [
+            2,
+            true
+        ],
+        [
+            3,
+            true
+        ]
+    ],
+    "vehicle_model_hash": 2594165727,
+    "vehicle_window_tint": -1,
+    "wheel_color": 156,
+    "wheel_type": 0
+}

@@ -1,0 +1,154 @@
+{
+    "MOD_AERIALS": [
+        7,
+        0
+    ],
+    "MOD_AIRFILTER": [
+        9,
+        0
+    ],
+    "MOD_ARCHCOVER": [
+        4,
+        0
+    ],
+    "MOD_ARMOR": [
+        4,
+        0
+    ],
+    "MOD_BRAKES": [
+        2,
+        0
+    ],
+    "MOD_DASHBOARD": [
+        1,
+        0
+    ],
+    "MOD_DOORSPEAKERS": [
+        6,
+        0
+    ],
+    "MOD_ENGINE": [
+        3,
+        0
+    ],
+    "MOD_ENGINEBLOCK": [
+        3,
+        0
+    ],
+    "MOD_EXHAUST": [
+        4,
+        0
+    ],
+    "MOD_FENDER": [
+        2,
+        0
+    ],
+    "MOD_FRAME": [
+        4,
+        0
+    ],
+    "MOD_FRONTBUMPER": [
+        1,
+        0
+    ],
+    "MOD_FRONTWHEEL": [
+        137,
+        0
+    ],
+    "MOD_HOOD": [
+        17,
+        0
+    ],
+    "MOD_HORNS": [
+        40,
+        0
+    ],
+    "MOD_REARBUMPER": [
+        2,
+        0
+    ],
+    "MOD_ROOF": [
+        6,
+        0
+    ],
+    "MOD_SEATS": [
+        10,
+        0
+    ],
+    "MOD_SIDESKIRT": [
+        13,
+        0
+    ],
+    "MOD_SPOILERS": [
+        10,
+        0
+    ],
+    "MOD_STEERINGWHEELS": [
+        14,
+        0
+    ],
+    "MOD_STRUTS": [
+        18,
+        0
+    ],
+    "MOD_SUSPENSION": [
+        3,
+        0
+    ],
+    "MOD_TIRESMOKE": "TOGGLE",
+    "MOD_TRANSMISSION": [
+        2,
+        0
+    ],
+    "MOD_TRIM": [
+        5,
+        0
+    ],
+    "MOD_TRIMDESIGN": [
+        0,
+        0
+    ],
+    "MOD_TURBO": "TOGGLE",
+    "MOD_VANITYPLATES": [
+        5,
+        0
+    ],
+    "MOD_XENONHEADLIGHTS": "TOGGLE",
+    "clan_logo": 0,
+    "dash_color": 111,
+    "drift_tires": 1,
+    "has_collision": true,
+    "headlight_color": 12,
+    "interior_color": 112,
+    "is_visible": true,
+    "model_attachments": [],
+    "neon_color": [
+        15,
+        3,
+        255
+    ],
+    "neon_lights": [
+        true,
+        true,
+        true,
+        true
+    ],
+    "pearlescent_color": 64,
+    "plate_text": "81OEN232",
+    "plate_text_index": 1,
+    "primary_color": 72,
+    "radio_station": "RADIO_14_DANCE_02",
+    "secondary_color": 71,
+    "tire_can_burst": 0,
+    "tire_smoke_color": [
+        132,
+        102,
+        226
+    ],
+    "vehicle_attachments": [],
+    "vehicle_extras": [],
+    "vehicle_model_hash": 2754593701,
+    "vehicle_window_tint": 1,
+    "wheel_color": 0,
+    "wheel_type": 12
+}
