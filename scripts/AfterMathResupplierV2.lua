@@ -1,6 +1,6 @@
 ---@diagnostic disable: undefined-global, lowercase-global
 
-local game_build = 3504
+local game_build = 3521
 
 --------------------------------------------------------------------------------------------
 --[[
