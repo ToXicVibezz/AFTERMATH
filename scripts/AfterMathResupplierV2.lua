@@ -730,7 +730,7 @@ if tonumber(online_version:get_string()) == game_build then
           if math.ceil(cashSupply) < 100 then
             ImGui.SameLine()
             if ImGui.Button(" Fill ##FakeCash") then
-              globals.set_int(1667995 + 0 + 1, 1)
+              globals.set_int(1667996 + 0 + 1, 1)
             end
             ImGui.SameLine(); ImGui.Dummy(5, 1)
           end
@@ -756,7 +756,7 @@ if tonumber(online_version:get_string()) == game_build then
           if math.ceil(cokeSupply) < 100 then
             ImGui.SameLine()
             if ImGui.Button(" Fill ##Cocaine") then
-              globals.set_int(1667995 + 1 + 1, 1)
+              globals.set_int(1667996 + 1 + 1, 1)
             end
                         ImGui.SameLine(); ImGui.Dummy(5, 1)
           end
@@ -782,7 +782,7 @@ if tonumber(online_version:get_string()) == game_build then
           if math.ceil(methSupply) < 100 then
             ImGui.SameLine()
             if ImGui.Button(" Fill ##Meth") then
-              globals.set_int(1667995 + 2 + 1, 1)
+              globals.set_int(1667996 + 2 + 1, 1)
             end
                         ImGui.SameLine(); ImGui.Dummy(5, 1)
           end
@@ -808,7 +808,7 @@ if tonumber(online_version:get_string()) == game_build then
           if math.ceil(weedSupply) < 100 then
             ImGui.SameLine()
             if ImGui.Button(" Fill ##Weed") then
-              globals.set_int(1667995 + 3 + 1, 1)
+              globals.set_int(1667996 + 3 + 1, 1)
             end
                         ImGui.SameLine(); ImGui.Dummy(5, 1)
           end
@@ -833,7 +833,7 @@ if tonumber(online_version:get_string()) == game_build then
           if math.ceil(dfSupply) < 100 then
             ImGui.SameLine()
             if ImGui.Button(" Fill ##DocumentForgery") then
-              globals.set_int(1667995 + 4 + 1, 1)
+              globals.set_int(1667996 + 4 + 1, 1)
             end
             ImGui.SameLine(); ImGui.Dummy(5, 1)
           end
@@ -859,7 +859,7 @@ if tonumber(online_version:get_string()) == game_build then
           if math.ceil(bunkerSupply) < 100 then
             ImGui.SameLine()
             if ImGui.Button(" Fill ##Bunker") then
-              globals.set_int(1667995 + 5 + 1, 1)
+              globals.set_int(1667996 + 5 + 1, 1)
             end
             ImGui.SameLine(); ImGui.Dummy(5, 1)
           end
@@ -885,7 +885,7 @@ if tonumber(online_version:get_string()) == game_build then
           if math.ceil(acidSupply) < 100 then
             ImGui.SameLine()
             if ImGui.Button(" Fill ##AcidLab") then
-              globals.set_int(1667995 + 6 + 1, 1)
+              globals.set_int(1667996 + 6 + 1, 1)
             end
             ImGui.SameLine(); ImGui.Dummy(5, 1)
           end

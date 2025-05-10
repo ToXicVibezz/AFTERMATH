@@ -29,7 +29,7 @@ local prize_wheel_prize_state = 45
 local gb_casino_heist_planning            = 1965614
 local gb_casino_heist_planning_cut_offset = 1497 + 736 + 92
 
-local fm_mission_controller_cart_grab       = 10289
+local fm_mission_controller_cart_grab       = 10291
 local fm_mission_controller_cart_grab_speed = 14
 local fm_mission_controller_cart_autograb   = true
 

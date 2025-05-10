@@ -1,8 +1,8 @@
 gtaoversion = memory.scan_pattern("8B C3 33 D2 C6 44 24 20"):add(0x24):rip()
 if gtaoversion:get_string() == "3521" then
 gui.get_tab("GUI_TAB_LUA_SCRIPTS"):add_button("Mini-game instant complete", function()
-    local local_H3_hack_1 = 53087  
-    local local_H3_hack_2 = 54153 
+    local local_H3_hack_1 = 53089  
+    local local_H3_hack_2 = 54155 
     local local_H3_hack_1_p = 2861    
     local local_H3_hack_2_p = 3862    
     local local_H4_hack = 24986 
@@ -42,9 +42,9 @@ gui.get_tab("GUI_TAB_LUA_SCRIPTS"):add_button("Mini-game instant complete", func
         locals.set_int("fm_mission_controller", 164, 0)
         locals.set_int("fm_mission_controller", 179, 7)
         locals.set_int("fm_mission_controller", 1292 + 135, 3)
-        locals.set_int("fm_mission_controller", 11812 + 24, 7) 
-        locals.set_float("fm_mission_controller", 10103 + 11, 1) 
-        locals.set_int("fm_mission_controller", 10143 + 2, 8) 
+        locals.set_int("fm_mission_controller", 11814 + 24, 7) 
+        locals.set_float("fm_mission_controller", 10105 + 11, 1) 
+        locals.set_int("fm_mission_controller", 10145 + 2, 8) 
     end 
 
     if SCRIPT.GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("fm_mission_controller")) ~= 0 then 
@@ -60,7 +60,7 @@ gui.get_tab("GUI_TAB_LUA_SCRIPTS"):add_button("Mini-game instant complete", func
         end
 
         -- locals.set_int("fm_mission_controller", 31765 + math.max(0, self.get_id()) * 292, 8)
-        locals.set_int("fm_mission_controller", 62379, 5)
+        locals.set_int("fm_mission_controller", 62381, 5)
         locals.set_int("fm_mission_controller", 1566, 2)
     end
     if SCRIPT.GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("am_mp_arc_cab_manager")) ~= 0 then 
@@ -142,7 +142,7 @@ gui.get_tab("GUI_TAB_LUA_SCRIPTS"):add_button("Mini-game instant complete", func
         [7]  = { script_name = "fm_content_vehrob_prep", minigame_local = 9223 },            
         [8]  = { script_name = "fm_content_vip_contract_1", minigame_local = 7408 },         
         [9]  = { script_name = "fm_mission_controller_2020", minigame_local = 29027 },      
-        [10] = { script_name = "fm_mission_controller", minigame_local = 9809 },             
+        [10] = { script_name = "fm_mission_controller", minigame_local = 9811 },             
         [11] = { script_name = "gb_cashing_out", minigame_local = 422 },         
         [12] = { script_name = "gb_gunrunning_defend", minigame_local = 2282 }, 
         [13] = { script_name = "gb_sightseer", minigame_local = 462 }, 
