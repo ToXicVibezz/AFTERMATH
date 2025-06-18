@@ -1,5 +1,5 @@
 online_version = memory.scan_pattern("8B C3 33 D2 C6 44 24 20"):add(0x24):rip()
-if tonumber(online_version:get_string()) == 3521 then 
+if tonumber(online_version:get_string()) == 3570 then 
     gui.show_message("AFTERMATH", "Money Methods From Popular Scripts + Menus.")
 
 local CEO2=277644
