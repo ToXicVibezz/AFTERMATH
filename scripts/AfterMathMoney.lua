@@ -5,7 +5,6 @@ if tonumber(online_version:get_string()) == 3717.0 then
 local CEO2=277644
 local CEO3=277645
 local CEO1=277877
-
 local CHIP=1963515
 
 local TransactionManager <const> = {};
