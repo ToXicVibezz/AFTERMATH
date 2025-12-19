@@ -19,8 +19,8 @@ local roulette_master_table   = 142
 local roulette_outcomes_table = 1357
 local roulette_ball_table     = 153
 
-local slots_random_results_table = 1366
-local slots_slot_machine_state   = 1656
+local slots_random_results_table = 1348
+local slots_slot_machine_state   = 1638
 
 local prize_wheel_win_state   = 298
 local prize_wheel_prize       = 14
