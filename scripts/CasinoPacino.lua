@@ -2,31 +2,31 @@ local json = require('CasinoPacinoJson') -- Script Made and Maintained by gir489
 
 local casino_gui = gui.get_tab("GUI_TAB_LUA_SCRIPTS") --IT'S NOT AL ANYMORE! IT'S DUNK!
 
-local blackjack_cards              = 134
+local blackjack_cards              = 138
 local blackjack_decks              = 846
-local blackjack_table_players      = 1794
+local blackjack_table_players      = 1798
 local blackjack_table_players_size = 8
 
-local three_card_poker_table           = 767
+local three_card_poker_table           = 771
 local three_card_poker_table_size      = 9
-local three_card_poker_cards           = 134
+local three_card_poker_cards           = 138
 local three_card_poker_current_deck    = 168
-local three_card_poker_anti_cheat      = 1056
+local three_card_poker_anti_cheat      = 1060
 local three_card_poker_anti_cheat_deck = 799
 local three_card_poker_deck_size       = 55
 
-local roulette_master_table   = 142
+local roulette_master_table   = 146
 local roulette_outcomes_table = 1357
 local roulette_ball_table     = 153
 
-local slots_random_results_table = 1348
-local slots_slot_machine_state   = 1638
+local slots_random_results_table = 1372
+local slots_slot_machine_state   = 1662
 
-local prize_wheel_win_state   = 298
+local prize_wheel_win_state   = 302
 local prize_wheel_prize       = 14
 local prize_wheel_prize_state = 45
 
-local gb_casino_heist_planning            = 1965614
+local gb_casino_heist_planning            = 1967717
 local gb_casino_heist_planning_cut_offset = 1497 + 736 + 92
 
 local fm_mission_controller_cart_grab       = 10291
