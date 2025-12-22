@@ -1,32 +1,32 @@
 gtaoversion = memory.scan_pattern("8B C3 33 D2 C6 44 24 20"):add(0x24):rip()
 if gtaoversion:get_string() == "3725.0" then
 gui.get_tab("GUI_TAB_LUA_SCRIPTS"):add_button("Mini-game instant complete", function()
-    local local_H3_hack_1 = 53089  
-    local local_H3_hack_2 = 54155 
-    local local_H3_hack_1_p = 2861    
+    local local_H3_hack_1 = 53132  
+    local local_H3_hack_2 = 54198 
+    local local_H3_hack_1_p = 2865    
     local local_H3_hack_2_p = 3862    
-    local local_H4_hack = 24986 
+    local local_H4_hack = 27103 
 
     if SCRIPT.GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("fm_mission_controller_2020")) ~= 0 then
 
-        locals.set_int("fm_mission_controller_2020", 29810, 6) 
-        locals.set_float("fm_mission_controller_2020", 31049 + 3, 100)       
-        locals.set_int("fm_mission_controller_2020", 9081 + 24, 7)
-        locals.set_int("fm_mission_controller_2020", 1001 + 135, 3)                                                                                     
-        locals.set_int("fm_mission_controller_2020", 1275, 2) 
+        locals.set_int("fm_mission_controller_2020", 30947, 6) 
+        locals.set_float("fm_mission_controller_2020", 32187 + 3, 100)       
+        locals.set_int("fm_mission_controller_2020", 9984 + 24, 7)
+        locals.set_int("fm_mission_controller_2020", 1005 + 135, 3)                                                                                     
+        locals.set_int("fm_mission_controller_2020", 1250, 2) 
 
-        locals.set_int("fm_mission_controller_2020", 1744, 
-            locals.get_int("fm_mission_controller_2020", 1745)) 
-        locals.set_int("fm_mission_controller_2020", 1726, 3) 
+        locals.set_int("fm_mission_controller_2020", 1748, 
+            locals.get_int("fm_mission_controller_2020", 1749)) 
+        locals.set_int("fm_mission_controller_2020", 1750, 3) 
 
-        if locals.get_int("fm_mission_controller_2020", 31024) == 3 then 
-            locals.set_int("fm_mission_controller_2020", 31025, 2) 
-            locals.set_float("fm_mission_controller_2020", 31025 + 1 + 1, 
-                locals.get_int("fm_mission_controller_2020", 31025 + 1 + 1 + 1)) 
-            locals.set_float("fm_mission_controller_2020", 31025 + 1 + 1 + 2, 
-                locals.get_int("fm_mission_controller_2020", 31025 + 1 + 1 + 1 + 2)) 
-            locals.set_float("fm_mission_controller_2020", 31025 + 1 + 1 + 4, 
-                locals.get_int("fm_mission_controller_2020", 31025 + 1 + 1 + 1 + 4)) 
+        if locals.get_int("fm_mission_controller_2020", 32161) == 3 then 
+            locals.set_int("fm_mission_controller_2020", 32162, 2) 
+            locals.set_float("fm_mission_controller_2020", 32162 + 1 + 1, 
+                locals.get_int("fm_mission_controller_2020", 32162 + 1 + 1 + 1)) 
+            locals.set_float("fm_mission_controller_2020", 32162 + 1 + 1 + 2, 
+                locals.get_int("fm_mission_controller_2020", 32162 + 1 + 1 + 1 + 2)) 
+            locals.set_float("fm_mission_controller_2020", 32162 + 1 + 1 + 4, 
+                locals.get_int("fm_mission_controller_2020", 32162 + 1 + 1 + 1 + 4)) 
             PAD.SET_CONTROL_VALUE_NEXT_FRAME(2, 237, 1.0) 
         end
     
@@ -38,13 +38,13 @@ gui.get_tab("GUI_TAB_LUA_SCRIPTS"):add_button("Mini-game instant complete", func
     end
             
     if SCRIPT.GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("fm_mission_controller")) ~= 0 then
-        locals.set_int("fm_mission_controller", 163, 0)
-        locals.set_int("fm_mission_controller", 164, 0)
-        locals.set_int("fm_mission_controller", 179, 7)
-        locals.set_int("fm_mission_controller", 1292 + 135, 3)
-        locals.set_int("fm_mission_controller", 11814 + 24, 7) 
+        locals.set_int("fm_mission_controller", 167, 0)
+        locals.set_int("fm_mission_controller", 168, 0)
+        locals.set_int("fm_mission_controller", 183, 7)
+        locals.set_int("fm_mission_controller", 1296 + 135, 3)
+        locals.set_int("fm_mission_controller", 11821 + 24, 7) 
         locals.set_float("fm_mission_controller", 10105 + 11, 1) 
-        locals.set_int("fm_mission_controller", 10145 + 2, 8) 
+        locals.set_int("fm_mission_controller", 10149 + 2, 8) 
     end 
 
     if SCRIPT.GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("fm_mission_controller")) ~= 0 then 
@@ -60,8 +60,8 @@ gui.get_tab("GUI_TAB_LUA_SCRIPTS"):add_button("Mini-game instant complete", func
         end
 
         -- locals.set_int("fm_mission_controller", 31765 + math.max(0, self.get_id()) * 292, 8)
-        locals.set_int("fm_mission_controller", 62381, 5)
-        locals.set_int("fm_mission_controller", 1566, 2)
+        locals.set_int("fm_mission_controller", 62430, 5)
+        locals.set_int("fm_mission_controller", 1570, 2)
     end
     if SCRIPT.GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("am_mp_arc_cab_manager")) ~= 0 then 
         local_H3_hack_1_p_v = locals.get_int("am_mp_arc_cab_manager", local_H3_hack_1_p)
@@ -85,32 +85,32 @@ gui.get_tab("GUI_TAB_LUA_SCRIPTS"):add_button("Mini-game instant complete", func
     ]]
 
     if SCRIPT.GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("fm_mission_controller_2020")) ~= 0 then 
-        locals.set_int("fm_mission_controller_2020", 1744, locals.get_int("fm_mission_controller_2020", 1745)) 
-        locals.set_int("fm_mission_controller_2020", 1746, 3) 
+        locals.set_int("fm_mission_controller_2020", 1748, locals.get_int("fm_mission_controller_2020", 1749)) 
+        locals.set_int("fm_mission_controller_2020", 1750, 3) 
     end
     if SCRIPT.GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("fm_content_island_heist")) ~= 0 then
-        locals.set_int("fm_content_island_heist", 787, locals.get_int("fm_content_island_heist", 788))
-        locals.set_int("fm_content_island_heist", 789, 3) 
-        locals.set_int("fm_content_island_heist", 10162 + 24, 7)
+        locals.set_int("fm_content_island_heist", 791, locals.get_int("fm_content_island_heist", 788))
+        locals.set_int("fm_content_island_heist", 793, 3) 
+        locals.set_int("fm_content_island_heist", 10224 + 24, 7)
     end
     if SCRIPT.GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("fm_content_vehrob_prep")) ~= 0 then
-        locals.set_int("fm_content_vehrob_prep", 568, locals.get_int("fm_content_vehrob_prep", 569)) 
-        locals.set_int("fm_content_vehrob_prep", 570, 3) 
-        locals.set_int("fm_content_vehrob_prep", 9223 + 24, 7)
+        locals.set_int("fm_content_vehrob_prep", 572, locals.get_int("fm_content_vehrob_prep", 569)) 
+        locals.set_int("fm_content_vehrob_prep", 574, 3) 
+        locals.set_int("fm_content_vehrob_prep", 9297 + 24, 7)
     end
     if SCRIPT.GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("am_mp_arc_cab_manager")) ~= 0 then
-        locals.set_int("am_mp_arc_cab_manager", 476, locals.get_int("am_mp_arc_cab_manager", 477)) 
-        locals.set_int("am_mp_arc_cab_manager", 478, 3) 
+        locals.set_int("am_mp_arc_cab_manager", 480, locals.get_int("am_mp_arc_cab_manager", 477)) 
+        locals.set_int("am_mp_arc_cab_manager", 482, 3) 
     end
     if SCRIPT.GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("fm_content_vehrob_casino_prize")) ~= 0 then
-        locals.set_int("fm_content_vehrob_casino_prize", 1066 + 135, 3)
+        locals.set_int("fm_content_vehrob_casino_prize", 1070 + 135, 3)
     end
     if SCRIPT.GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("fm_content_business_battles")) ~= 0 then
-        locals.set_int("fm_content_business_battles", 4173 + 24, 7)
+        locals.set_int("fm_content_business_battles", 4216 + 24, 7)
     end
 
     if SCRIPT.GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("am_mp_hotwire")) ~= 0 then
-        locals.set_int("am_mp_hotwire", 298, 2) 
+        locals.set_int("am_mp_hotwire", 303, 2) 
     end
 
     if SCRIPT.GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("word_hack")) ~= 0 then 
@@ -118,13 +118,13 @@ gui.get_tab("GUI_TAB_LUA_SCRIPTS"):add_button("Mini-game instant complete", func
     end
 
     if SCRIPT.GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("circuitblockhack")) ~= 0 then
-        locals.set_int("circuitblockhack", 49 + 9, 2) 
+        locals.set_int("circuitblockhack", 53 + 9, 2) 
     end
     if SCRIPT.GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("fm_content_hacker_house_finale")) ~= 0 then
-        locals.set_int("fm_content_hacker_house_finale", 5951 + 1, 5) 
+        locals.set_int("fm_content_hacker_house_finale", 6023 + 1, 5) 
     end
 
-    local_mp2024_02_m4 = 5097 
+    local_mp2024_02_m4 = 5190 
     local_mp2024_02_m4_v = locals.get_int("fm_content_hacker_whistle_prep", local_mp2024_02_m4)
     if (local_mp2024_02_m4_v & (1 << 26)) == 0 then
         local_mp2024_02_m4_v = local_mp2024_02_m4_v ~ (1 << 26)
@@ -134,18 +134,18 @@ gui.get_tab("GUI_TAB_LUA_SCRIPTS"):add_button("Mini-game instant complete", func
     -- int* iParam0, int iParam1, int iParam2, int iParam3, int iParam4, var uParam5, var uParam6, int iParam7, bool bParam8, bool bParam9, bool bParam10, bool bParam11, bool bParam12, bool bParam13, int iParam14, int iParam15, bool bParam16, bool bParam17, bool bParam18, bool bParam19, bool bParam20, bool bParam21
     local minigamelocaltable = {
         [1]  = { script_name = "agency_heist3b", minigame_local = 6210 },       
-        [2]  = { script_name = "business_battles_sell", minigame_local = 452 }, 
-        [3]  = { script_name = "fm_content_business_battles", minigame_local = 4173 },
-        [4]  = { script_name = "fm_content_island_heist", minigame_local = 10162 },
-        [5]  = { script_name = "fm_content_vehrob_casino_prize", minigame_local = 7774 + 2 },
-        [6]  = { script_name = "fm_content_vehrob_police", minigame_local = 7667 },         
-        [7]  = { script_name = "fm_content_vehrob_prep", minigame_local = 9223 },            
-        [8]  = { script_name = "fm_content_vip_contract_1", minigame_local = 7408 },         
-        [9]  = { script_name = "fm_mission_controller_2020", minigame_local = 29027 },      
-        [10] = { script_name = "fm_mission_controller", minigame_local = 9811 },             
-        [11] = { script_name = "gb_cashing_out", minigame_local = 422 },         
-        [12] = { script_name = "gb_gunrunning_defend", minigame_local = 2282 }, 
-        [13] = { script_name = "gb_sightseer", minigame_local = 462 }, 
+        [2]  = { script_name = "business_battles_sell", minigame_local = 456 }, 
+        [3]  = { script_name = "fm_content_business_battles", minigame_local = 4216 },
+        [4]  = { script_name = "fm_content_island_heist", minigame_local = 10224 },
+        [5]  = { script_name = "fm_content_vehrob_casino_prize", minigame_local = 7852 + 2 },
+        [6]  = { script_name = "fm_content_vehrob_police", minigame_local = 7736 },         
+        [7]  = { script_name = "fm_content_vehrob_prep", minigame_local = 9297 },            
+        [8]  = { script_name = "fm_content_vip_contract_1", minigame_local = 7620 },         
+        [9]  = { script_name = "fm_mission_controller_2020", minigame_local = 30163 },      
+        [10] = { script_name = "fm_mission_controller", minigame_local = 9815 },             
+        [11] = { script_name = "gb_cashing_out", minigame_local = 426 },         
+        [12] = { script_name = "gb_gunrunning_defend", minigame_local = 2286 }, 
+        [13] = { script_name = "gb_sightseer", minigame_local = 466 }, 
     }
         --[12]  = {script_name = "gb_casino_heist", minigame_local = }, --Global_2737317
         --[12]  = {script_name = "gb_casino", minigame_local = }, --Global_2737317
@@ -186,7 +186,7 @@ gui.get_tab("GUI_TAB_LUA_SCRIPTS"):add_button("Mini-game instant complete", func
         end
     end
 
-    minigame_tmp_v2 = globals.get_int(2738536)
+    minigame_tmp_v2 = globals.get_int(2731604)
     if (minigame_tmp_v2 & (1 << 9)) == 0 then
         minigame_tmp_v2 = minigame_tmp_v2 ~ (1 << 9)
     end
@@ -201,7 +201,7 @@ gui.get_tab("GUI_TAB_LUA_SCRIPTS"):add_button("Mini-game instant complete", func
     if SCRIPT.GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("fm_content_stash_house")) ~= 0 then 
         for i = 0, 2 do
             local safe_code = locals.get_int("fm_content_stash_house", 140 + 22 + (1 + (i * 2)) + 1)
-            locals.set_float("fm_content_stash_house", 140 + 22 + (1 + (i * 2)), safe_code)
+            locals.set_float("fm_content_stash_house", 144 + 22 + (1 + (i * 2)), safe_code)
         end
         s:sleep(250)
         PAD.SET_CONTROL_VALUE_NEXT_FRAME(2, 235, 1.0)
