@@ -8,7 +8,7 @@ local game_build = 3725.0
   Credits: RXI (json.lua (https://github.com/rxi/json.lua) - for the original library)
 ]]--
 local function json()
-  local json = { _version = "1.1.4" }
+  local json = { _version = "1.1.5" }
   --encode
   local encode
 
@@ -515,67 +515,67 @@ if tonumber(online_version:get_string()) == game_build then
     local G
     if crates ~= nil then
       if crates == 1 then
-        G = 15732
+        G = 15821
       end
       if crates == 2 then
-        G = 15733
+        G = 15822
       end
       if crates == 3 then
-        G = 15734
+        G = 15823
       end
       if crates == 4 or crates == 5 then
-        G = 15735
+        G = 15824
       end
       if crates == 6 or crates == 7 then
-        G = 15736
+        G = 15825
       end
       if crates == 8 or crates == 9 then
-        G = 15737
+        G = 15826
       end
       if crates >= 10 and crates <= 14 then
-        G = 15738
+        G = 15827
       end
       if crates >= 15 and crates <= 19 then
-        G = 15739
+        G = 15828
       end
       if crates >= 20 and crates <= 24 then
-        G = 15740
+        G = 15829
       end
       if crates >= 25 and crates <= 29 then
-        G = 15741
+        G = 15830
       end
       if crates >= 30 and crates <= 34 then
-        G = 15742
+        G = 15831
       end
       if crates >= 35 and crates <= 39 then
-        G = 15743
+        G = 15832
       end
       if crates >= 40 and crates <= 44 then
-        G = 15744
+        G = 15833
       end
       if crates >= 45 and crates <= 49 then
-        G = 15745
+        G = 15834
       end
       if crates >= 50 and crates <= 59 then
-        G = 15746
+        G = 15835
       end
       if crates >= 60 and crates <= 69 then
-        G = 15747
+        G = 15836
       end
       if crates >= 70 and crates <= 79 then
-        G = 15748
+        G = 15837
       end
       if crates >= 80 and crates <= 89 then
-        G = 15749
+        G = 15838
       end
       if crates >= 90 and crates <= 99 then
-        G = 15750
+        G = 15839
       end
       if crates >= 100 and crates <= 110 then
-        G = 15751
+        G = 15840
       end
       if crates == 111 then
-        G = 15752
+        G = 15841
       end
     else
       G = 0
@@ -730,7 +730,7 @@ if tonumber(online_version:get_string()) == game_build then
           if math.ceil(cashSupply) < 100 then
             ImGui.SameLine()
             if ImGui.Button(" Fill ##FakeCash") then
-              globals.set_int(1667996 + 4 + 1, 1)
+              globals.set_int(1673803 + 4 + 1, 1)
             end
             ImGui.SameLine(); ImGui.Dummy(5, 1)
           end
@@ -756,7 +756,7 @@ if tonumber(online_version:get_string()) == game_build then
           if math.ceil(cokeSupply) < 100 then
             ImGui.SameLine()
             if ImGui.Button(" Fill ##Cocaine") then
-              globals.set_int(1667996 + 5 + 1, 1)
+              globals.set_int(1673803 + 5 + 1, 1)
             end
                         ImGui.SameLine(); ImGui.Dummy(5, 1)
           end
@@ -782,7 +782,7 @@ if tonumber(online_version:get_string()) == game_build then
           if math.ceil(methSupply) < 100 then
             ImGui.SameLine()
             if ImGui.Button(" Fill ##Meth") then
-              globals.set_int(1667996 + 7 + 1, 1)
+              globals.set_int(1673803 + 7 + 1, 1)
             end
                         ImGui.SameLine(); ImGui.Dummy(5, 1)
           end
@@ -808,7 +808,7 @@ if tonumber(online_version:get_string()) == game_build then
           if math.ceil(weedSupply) < 100 then
             ImGui.SameLine()
             if ImGui.Button(" Fill ##Weed") then
-              globals.set_int(1667996 + 6 + 1, 1)
+              globals.set_int(1673803 + 6 + 1, 1)
             end
                         ImGui.SameLine(); ImGui.Dummy(5, 1)
           end
@@ -833,7 +833,7 @@ if tonumber(online_version:get_string()) == game_build then
           if math.ceil(dfSupply) < 100 then
             ImGui.SameLine()
             if ImGui.Button(" Fill ##DocumentForgery") then
-              globals.set_int(1667996 + 8 + 1, 1)
+              globals.set_int(1673803 + 8 + 1, 1)
             end
             ImGui.SameLine(); ImGui.Dummy(5, 1)
           end
@@ -859,7 +859,7 @@ if tonumber(online_version:get_string()) == game_build then
           if math.ceil(bunkerSupply) < 100 then
             ImGui.SameLine()
             if ImGui.Button(" Fill ##Bunker") then
-              globals.set_int(1667996 + 9 + 1, 1)
+              globals.set_int(1673803 + 9 + 1, 1)
             end
             ImGui.SameLine(); ImGui.Dummy(5, 1)
           end
@@ -885,7 +885,7 @@ if tonumber(online_version:get_string()) == game_build then
           if math.ceil(acidSupply) < 100 then
             ImGui.SameLine()
             if ImGui.Button(" Fill ##AcidLab") then
-              globals.set_int(1667996 + 10 + 1, 1)
+              globals.set_int(1673803 + 10 + 1, 1)
             end
             ImGui.SameLine(); ImGui.Dummy(5, 1)
           end
@@ -974,17 +974,17 @@ if tonumber(online_version:get_string()) == game_build then
             saveToConfig("cashUpdgrade2", cashUpdgrade2)
           end
           if cashUpdgrade1 then
-            cashOffset1 = globals.get_int(262145 + 17326)
+            cashOffset1 = globals.get_int(262145 + 17415)
           else
             cashOffset1 = 0
           end
           if cashUpdgrade2 then
-            cashOffset2 = globals.get_int(262145 + 17332)
+            cashOffset2 = globals.get_int(262145 + 17421)
           else
             cashOffset2 = 0
           end
           local cashProduct = stats.get_int(MPx .. "_PRODTOTALFORFACTORY0")
-          cashTotal = ((globals.get_int(262145 + 17320) + cashOffset1 + cashOffset2) * cashProduct)
+          cashTotal = ((globals.get_int(262145 + 17409) + cashOffset1 + cashOffset2) * cashProduct)
           ImGui.Text("Product:"); ImGui.SameLine(); ImGui.Dummy(5, 1); ImGui.SameLine(); ImGui.ProgressBar(
             (cashProduct / 40), 160, 25, tostring(cashProduct) .. " Boxes (" ..
             tostring(math.floor(cashProduct * 2.5)) .. "%)")
@@ -1003,17 +1003,17 @@ if tonumber(online_version:get_string()) == game_build then
             saveToConfig("cokeUpdgrade2", cokeUpdgrade2)
           end
           if cokeUpdgrade1 then
-            cokeOffset1 = globals.get_int(262145 + 17327)
+            cokeOffset1 = globals.get_int(262145 + 17416)
           else
             cokeOffset1 = 0
           end
           if cokeUpdgrade2 then
-            cokeOffset2 = globals.get_int(262145 + 17333)
+            cokeOffset2 = globals.get_int(262145 + 17422)
           else
             cokeOffset2 = 0
           end
           local cokeProduct = stats.get_int(MPx .. "_PRODTOTALFORFACTORY1")
-          cokeTotal = ((globals.get_int(262145 + 17321) + cokeOffset1 + cokeOffset2) * cokeProduct)
+          cokeTotal = ((globals.get_int(262145 + 17410) + cokeOffset1 + cokeOffset2) * cokeProduct)
           ImGui.Text("Product:"); ImGui.SameLine(); ImGui.Dummy(5, 1); ImGui.SameLine(); ImGui.ProgressBar(
             (cokeProduct / 10), 160, 25, tostring(cokeProduct) .. " Kilos (" .. tostring(cokeProduct * 10) .. "%)")
           ImGui.SameLine(); ImGui.Dummy(10, 1); ImGui.SameLine(); ImGui.Text("Value:")
@@ -1032,17 +1032,17 @@ if tonumber(online_version:get_string()) == game_build then
             saveToConfig("methUpdgrade2", methUpdgrade2)
           end
           if methUpdgrade1 then
-            methOffset1 = globals.get_int(262145 + 17328)
+            methOffset1 = globals.get_int(262145 + 17417)
           else
             methOffset1 = 0
           end
           if methUpdgrade2 then
-            methOffset2 = globals.get_int(262145 + 17334)
+            methOffset2 = globals.get_int(262145 + 17423)
           else
             methOffset2 = 0
           end
           local methProduct = stats.get_int(MPx .. "_PRODTOTALFORFACTORY2")
-          methTotal = ((globals.get_int(262145 + 17322) + methOffset1 + methOffset2) * methProduct)
+          methTotal = ((globals.get_int(262145 + 17411) + methOffset1 + methOffset2) * methProduct)
           ImGui.Text("Product:"); ImGui.SameLine(); ImGui.Dummy(5, 1); ImGui.SameLine(); ImGui.ProgressBar(
             (methProduct / 20), 160, 25, tostring(methProduct) .. " Pounds (" .. tostring(methProduct * 5) .. "%)")
           ImGui.SameLine(); ImGui.Dummy(10, 1); ImGui.SameLine(); ImGui.Text("Value:"); ImGui.SameLine()
@@ -1061,17 +1061,17 @@ if tonumber(online_version:get_string()) == game_build then
             saveToConfig("weedUpdgrade2", weedUpdgrade2)
           end
           if weedUpdgrade1 then
-            weedOffset1 = globals.get_int(262145 + 17329)
+            weedOffset1 = globals.get_int(262145 + 17418)
           else
             weedOffset1 = 0
           end
           if weedUpdgrade2 then
-            weedOffset2 = globals.get_int(262145 + 17335)
+            weedOffset2 = globals.get_int(262145 + 17424)
           else
             weedOffset2 = 0
           end
           local weedProduct = stats.get_int(MPx .. "_PRODTOTALFORFACTORY3")
-          weedTotal = ((globals.get_int(262145 + 17323) + weedOffset1 + weedOffset2) * weedProduct)
+          weedTotal = ((globals.get_int(262145 + 17412) + weedOffset1 + weedOffset2) * weedProduct)
           ImGui.Text("Product:"); ImGui.SameLine(); ImGui.Dummy(5, 1); ImGui.SameLine(); ImGui.ProgressBar(
             (weedProduct / 80), 160, 25,
             tostring(weedProduct) .. " Pounds (" .. tostring(math.floor(weedProduct / 8 * 10)) .. "%)")
@@ -1092,17 +1092,17 @@ if tonumber(online_version:get_string()) == game_build then
             saveToConfig("fdUpdgrade2", fdUpdgrade2)
           end
           if fdUpdgrade1 then
-            fdOffset1 = globals.get_int(262145 + 17325)
+            fdOffset1 = globals.get_int(262145 + 17414)
           else
             fdOffset1 = 0
           end
           if fdUpdgrade2 then
-            fdOffset2 = globals.get_int(262145 + 17331)
+            fdOffset2 = globals.get_int(262145 + 17420)
           else
             fdOffset2 = 0
           end
           local fdProduct = stats.get_int(MPx .. "_PRODTOTALFORFACTORY4")
-          fdTotal = ((globals.get_int(262145 + 17319) + fdOffset1 + fdOffset2) * fdProduct)
+          fdTotal = ((globals.get_int(262145 + 17408) + fdOffset1 + fdOffset2) * fdProduct)
           ImGui.Text("Product:"); ImGui.SameLine(); ImGui.Dummy(5, 1); ImGui.SameLine(); ImGui.ProgressBar(
             (fdProduct / 60), 160, 25, tostring(fdProduct) .. " Boxes (" .. tostring(math.floor(fdProduct / 6 * 10)) ..
             "%)")
@@ -1121,17 +1121,17 @@ if tonumber(online_version:get_string()) == game_build then
             saveToConfig("bunkerUpdgrade2", bunkerUpdgrade2)
           end
           if bunkerUpdgrade1 then
-            bunkerOffset1 = globals.get_int(262145 + 21256)
+            bunkerOffset1 = globals.get_int(262145 + 21345)
           else
             bunkerOffset1 = 0
           end
           if bunkerUpdgrade2 then
-            bunkerOffset2 = globals.get_int(262145 + 21255)
+            bunkerOffset2 = globals.get_int(262145 + 21344)
           else
             bunkerOffset2 = 0
           end
           local bunkerProduct = stats.get_int(MPx .. "_PRODTOTALFORFACTORY5")
-          bunkerTotal = ((globals.get_int(262145 + 21254) + bunkerOffset1 + bunkerOffset2) * bunkerProduct)
+          bunkerTotal = ((globals.get_int(262145 + 21343) + bunkerOffset1 + bunkerOffset2) * bunkerProduct)
           ImGui.Text("Product:"); ImGui.SameLine(); ImGui.Dummy(5, 1); ImGui.SameLine(); ImGui.ProgressBar(
             (bunkerProduct / 100), 160, 25, tostring(bunkerProduct) .. " Crates (" .. tostring(bunkerProduct) .. "%)")
           ImGui.SameLine(); ImGui.Dummy(10, 1); ImGui.SameLine(); ImGui.Text("Value:"); ImGui.SameLine(); ImGui.Text(
@@ -1145,12 +1145,12 @@ if tonumber(online_version:get_string()) == game_build then
             saveToConfig("acidUpdgrade", acidUpdgrade)
           end
           if acidUpdgrade then
-            acidOffset = globals.get_int(262145 + 17330)
+            acidOffset = globals.get_int(262145 + 17419)
           else
             acidOffset = 0
           end
           local acidProduct = stats.get_int(MPx .. "_PRODTOTALFORFACTORY6")
-          acidTotal = ((globals.get_int(262145 + 17324) + acidOffset) * acidProduct)
+          acidTotal = ((globals.get_int(262145 + 17413) + acidOffset) * acidProduct)
           ImGui.Text("Product:"); ImGui.SameLine(); ImGui.Dummy(5, 1); ImGui.SameLine(); ImGui.ProgressBar(
             (acidProduct / 100), 160, 25,
             tostring(acidProduct) .. " Sheets (" .. tostring(math.floor(acidProduct / 16 * 10)) .. "%)")
