@@ -1,0 +1,112 @@
+{
+    "MOD_ARMOR": [
+        4,
+        0
+    ],
+    "MOD_BRAKES": [
+        2,
+        0
+    ],
+    "MOD_ENGINE": [
+        3,
+        0
+    ],
+    "MOD_EXHAUST": [
+        8,
+        0
+    ],
+    "MOD_FENDER": [
+        2,
+        0
+    ],
+    "MOD_FRAME": [
+        13,
+        0
+    ],
+    "MOD_FRONTBUMPER": [
+        4,
+        0
+    ],
+    "MOD_GRILLE": [
+        2,
+        0
+    ],
+    "MOD_HOOD": [
+        6,
+        0
+    ],
+    "MOD_HORNS": [
+        57,
+        0
+    ],
+    "MOD_LIVERY": [
+        17,
+        0
+    ],
+    "MOD_REARBUMPER": [
+        5,
+        0
+    ],
+    "MOD_RIGHTFENDER": [
+        3,
+        0
+    ],
+    "MOD_ROOF": [
+        2,
+        0
+    ],
+    "MOD_SIDESKIRT": [
+        3,
+        0
+    ],
+    "MOD_SPOILERS": [
+        10,
+        0
+    ],
+    "MOD_SUSPENSION": [
+        3,
+        0
+    ],
+    "MOD_TRANSMISSION": [
+        2,
+        0
+    ],
+    "MOD_TRIMDESIGN": [
+        1,
+        0
+    ],
+    "MOD_TURBO": "TOGGLE",
+    "MOD_XENONHEADLIGHTS": "TOGGLE",
+    "clan_logo": 0,
+    "dash_color": 156,
+    "drift_tires": 0,
+    "has_collision": true,
+    "headlight_color": 255,
+    "interior_color": 70,
+    "is_visible": true,
+    "model_attachments": [],
+    "neon_color": [
+        255,
+        0,
+        255
+    ],
+    "neon_lights": [
+        false,
+        false,
+        false,
+        false
+    ],
+    "pearlescent_color": 7,
+    "plate_text": "35LNL822",
+    "plate_text_index": 0,
+    "primary_color": 0,
+    "radio_station": "OFF",
+    "secondary_color": 0,
+    "tire_can_burst": 1,
+    "vehicle_attachments": [],
+    "vehicle_extras": [],
+    "vehicle_model_hash": 4151380270,
+    "vehicle_window_tint": -1,
+    "wheel_color": 112,
+    "wheel_type": 0
+}
